@@ -1,0 +1,754 @@
+@charset "UTF-8";
+
+$nr: no-repeat;
+$rb: right bottom;
+$rt: right top;
+$rc: right center;
+$cc: center center;
+$lc: left center;
+$lb: left bottom;
+$bc: bottom center;
+$tr: transparent;
+$bord: 1px solid #eaeaea;
+$black: #000;
+$bcol: #f3ebdc;
+$font2: 'Ubuntu', sans-serif;
+
+@font-face {
+	font-family: 'a_monumentonrdemibold';
+	src: url('../fonts/hj5bikl2-webfont.eot');
+	src: url('../fonts/hj5bikl2-webfont.eot@#iefix') format('embedded-opentype'),
+	url('../fonts/hj5bikl2-webfont.woff2') format('woff2'),
+	url('../fonts/hj5bikl2-webfont.woff') format('woff'),
+	url('../fonts/hj5bikl2-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	min-width: unset;
+}
+
+.div-wrape {
+	min-width: unset;  
+}
+
+.close-mnu,
+.burger-w {
+	display: none;
+}
+
+/*********************/
+
+
+
+
+/********************/ 
+
+.div-bk5 {
+	display: none;
+}
+
+.div-bk15,
+.div-bk10,
+.div-bk8,
+.div-bk5 {
+
+}
+
+@media only screen and (max-width : 1199px) {
+	.div-bk12 > div,
+	.div-bk10 > div,
+	.div-bk7 > div,
+	.div-bk8 > div,
+	.div-bk15 > div,
+	.div-bk5 > div,
+	.div-bk1 > div,
+	.contain {
+		max-width: 970px;
+		min-width: unset;    
+	}
+	
+	 //main blocks pt
+		.div-bk12,
+	 .div-bk10,
+	 .div-bk8 {
+		 padding: 60px 0;   
+		 background-size: cover;
+	 }
+	 .div-bk8 {   
+		 padding-top: 60px;
+		 padding-bottom: 0;
+	 }
+
+	 /*Blocks Bg*/
+	 .div-bk15 { 
+		 background-size: cover;  
+	 }
+
+ //headings 
+ .div-bk12 > div > span,
+ .div-bk10 > div > span,
+ .div-bk8 > div > span {
+	 width: 100%;
+	 padding-top: 0;
+ }
+
+ .div-bk1 * {
+	float: none !important;
+}
+* {  
+	box-sizing: border-box;
+}
+.div-bk1 > div {
+	display: flex;    
+	flex-direction: column;            
+	align-items: flex-end;
+}
+.div-bk1 > div .div-bk1-b1 > a {
+	padding-left: 0;    
+}
+
+.div-bk1 > div .div-bk1-b2 {
+	width: auto;
+	display: inline-block;
+	margin-left: 0;    
+}
+.div-bk1 > div .div-bk1-b3 > a {
+	float: none;
+	width: auto;
+	display: inline-block;
+	margin-right: 0;
+	padding: 0 40px;
+}
+.div-bk1 > div .div-bk1-b3 {
+	width: auto;
+}
+.div-bk5 > div > div {
+	width: 100%;
+}
+.div-bk1 {
+	height: auto;
+	padding-bottom: 40px;    
+	background-size: cover;
+}
+.div-bk1 > div .div-bk1-b1 {
+ display: flex;
+ width: 100%;
+}
+.div-bk1 > div .div-bk1-b1 > div {
+ display: flex;   
+ align-items: center;
+}
+.div-bk1 > div .div-bk1-b3 {
+ display: flex;
+ justify-content: flex-end;
+}
+.div-bk1 > div .div-bk1-b1 > div
+{
+ margin-left: auto;
+}
+.div-bk8 > div .div-bk8-b2 > ul > li {
+	display: flex;  
+	flex-wrap: wrap;
+
+	.div-b8-r {
+	 width: 100%;
+ }
+} 
+.div-bk8 > div .div-bk8-b2 > ul > li .div-b8-l .slid1 {
+
+}
+.div-bk8 > div .div-bk8-b2 > ul > li .div-b8-l {
+ float: none;
+ margin-left: auto;
+ margin-right: auto;
+}
+.div-bk8 > div .div-bk8-b2 > ul > li {
+ width: 100%;
+}
+.div-bk8 > div .div-bk8-b2 > ul {
+ height: 980px;
+ width: 100%;
+}
+
+.div-bk8 > div .div-bk8-b2 > ul > li .div-b8-r .div-b8-r-b5 {
+ z-index: 10;
+}
+
+.div-bk10 > div .div-bk10-b1 {
+ margin-left: 0;
+ display: block;
+ position: static;
+}
+.div-bk10 > div .div-bk10-b1 .div-rab7 > div {
+ margin-left: 0;
+}
+.div-bk10 > div .div-bk10-b1 .div-rab5 > div,
+.div-bk10 > div .div-bk10-b1 .div-rab3 > div,
+.div-bk10 > div .div-bk10-b1 .div-rab1 > div,
+.div-bk10 > div .div-bk10-b1 > div,
+.div-bk10 > div .div-bk10-b1 > div > span,
+.div-bk10 > div .div-bk10-b1 > div > div,
+.div-bk10 > div .div-bk10-b1 > div > div > div > div,
+.div-bk10 > div .div-bk10-b1 > div > div > div {
+ height: auto;
+ display: block;
+ position: static;
+ text-align: left;
+ margin-left: 0;
+}
+.div-bk10 > div .div-bk10-b1 > div > span {
+	display: flex;    
+	align-items: center;
+	justify-content: center;
+	height: 106px;
+}
+.div-bk10 > div .div-bk10-b1 > div {
+	display: flex;  
+	align-items: center;
+}
+.div-bk10 > div .div-bk10-b1 > div > div > div > div {
+	margin-left: 35px;
+}
+.div-bk10 > div .div-bk10-b1 {
+	border: none;
+}
+.div-bk10 > div .div-bk10-b1 > div.div-rab9 {
+	display: none;
+}
+.div-bk10 > div .div-bk10-b1 {
+	margin-bottom: 65px;
+}
+.div-bk10 > div .div-bk10-b3 {
+	width: 100%;
+}
+.div-bk15 > div .div-bk15-b1 {
+	margin-left: 41px;
+}
+.div-bk12 > div .div-bk12-b1 {
+	display: flex;  
+					justify-content: center;
+					width: 100%;
+}
+.div-bk12 > div .div-bk12-b1 > div {
+	float: none;
+	background-position: top center;
+	padding-top: 170px;
+	text-align: center;
+	padding-left: 0;
+	margin-left: 0;
+	margin-left: 0 !important;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 0;
+}
+.div-bk12 > div .div-bk12-b1 > div > div,
+.div-bk12 > div .div-bk12-b1 > div > span {
+	width: 100%;
+	margin-right: 0;
+}
+.div-bk12 > div .div-bk12-b1 > div {
+	width: 33.333%;
+}
+}//1199
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+	.div-bk12 > div,
+	.div-bk10 > div,
+	.div-bk7 > div,
+	.div-bk8 > div,
+	.div-bk15 > div,
+	.div-bk5 > div,
+	.div-bk1 > div,
+	.contain {
+		max-width: 750px;
+	}   
+
+	.div-bk1 > div .div-bk1-b1 > a > span {
+	 font-size: 24px;
+ }
+ .div-bk1 > div .div-bk1-b1 > div > div > div {
+	 font-size: 21px;
+ }
+ .div-bk1 > div .div-bk1-b2 > div {
+	 font-size: 25px;
+	 line-height: 1.3;
+ }
+ .div-bk1 > div .div-bk1-b1 > div > a {
+	 display: flex;
+	 padding-right: 0;
+ }
+ .div-bk10 > div .div-bk10-b1 > div > span {
+	 height: 80px;
+	 width: 80px;
+	 border-width: 5px;
+	 font-size: 40px;
+ }
+ .div-bk10 > div .div-bk10-b1 > div > div > div > div {
+	 line-height: 1.2;
+	 margin-left: 15px;  
+ }
+ .div-bk10 > div .div-bk10-b1 > div {
+	 margin-bottom: 25px;
+ }
+
+ .div-bk10 > div .div-bk10-b1 > div > div > div > div a,
+ .div-bk10 > div .div-bk10-b1 > div > div > div > div {
+	 font-size: 23px;
+ }
+ .div-bk15 > div {
+	 display: flex;   
+	 flex-direction: column;   
+					 align-items: center;
+ }
+ .div-bk15 {
+	 padding: 60px 0;
+ }
+ .div-bk15 > div .div-bk15-b3 {   
+					 order: -1;
+					 margin-top: 0;
+ }
+ .div-bk15 > div .div-bk15-b1 {
+	 margin-top: 86px;
+	 background: none; 
+	 display: flex;   
+	 justify-content: center;  
+	 margin-left: 0;
+	 margin-right: 0;
+	 width: 100%;
+ }
+ .div-bk15 > div .div-bk15-b1 > div {
+	 background-color: #FFDE09;
+	 width: 180px;
+	 height: 180px;  
+	 padding: 0;
+	 display: flex;   
+					 align-items: center;
+							justify-content: center;   
+					 border-radius: 50%;
+					 margin-left: 0;
+					 margin-right: 0;
+ }
+
+ .div-bk15 > div .div-bk15-b0 {
+	 float: none;
+ }
+} 
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	.div-bk12 > div,
+	.div-bk10 > div,
+	.div-bk7 > div,
+	.div-bk8 > div,
+	.div-bk15 > div,
+	.div-bk5 > div,
+	.div-bk1 > div,
+	.contain {
+		max-width: 600px;
+	}
+	/**/
+	.div-bk1 > div .div-bk1-b1 {   
+	 flex-wrap: wrap;
+ }
+ .div-bk1 > div .div-bk1-b1 > div > a > span {
+	 padding-right: 25px;
+ }
+ .div-bk1 > div .div-bk1-b1 > div {
+	 margin-left: 0;
+	 width: 100%;
+	 margin-top: 15px;
+	 margin-right: 0;
+	 flex-direction: column;
+ }
+ .div-bk1 > div .div-bk1-b1 > a {
+	 text-align: center;
+	 margin-left: auto;
+	 margin-right: auto;
+ } 
+ .div-bk1 > div .div-bk1-b2 {
+	 margin-left: auto;
+	 margin-right: auto;
+ }
+ .div-bk1 > div .div-bk1-b3 {
+	 width: 100%;   
+	 justify-content: center;
+	 margin-top: 25px;
+ }
+ .div-bk1 > div .div-bk1-b1 > div > a {
+	 margin-top: 15px;   
+ }
+ .div-bk1 {   
+	 background-size: auto 160%;
+ }
+ .div-bk1 > div .div-bk1-b1 > a {
+
+ }
+ .div-bk10 > div .div-bk10-b2 {
+	 width: 100%;
+ }
+ .div-bk12 > div .div-bk12-b1 > div {
+	 padding: 100px 10px 0 10px;
+					 background-size: 80px;
+ }
+ .div-bk12 > div .div-bk12-b1 > div > span {
+	 min-height: 46px;
+	 display: flex;    
+	 align-items: center;
+	 width: 100%;
+	 justify-content: center;
+	 font-size: 18px;
+ }
+
+}      
+
+@media only screen and (max-width : 640px) {
+	.div-bk12 > div,
+	.div-bk10 > div,
+	.div-bk7 > div,
+	.div-bk8 > div,
+	.div-bk15 > div,
+	.div-bk5 > div,
+	.div-bk1 > div,
+	.contain {
+		max-width: 530px;
+	}
+
+	.div-bk1 {
+		margin-top: 0;
+	}
+
+	.div-top-menu {
+		position: relative;
+		height: auto;
+		padding: 15px;
+		> ul {
+			display: block;
+			display: none;
+			position: absolute;
+			background-color: #FFF;
+			width: 100%;
+			top: 0;
+			left: 0;
+			padding-top: 15px;
+			opacity: 0.4;
+			opacity: 1;
+			padding-bottom: 20px;  
+			> li {
+				float: none;    
+			}
+			> li.close-mnu {
+				display: flex;        
+				width: 45px;
+				height: 45px;                
+				border-radius: 50%;
+				margin-left: 15px;
+				background: #008cdb url("../img/close.svg") $nr center;
+				background-size: 16px;
+			}
+		}
+	}
+	
+	
+	.burger-w {
+		display: flex;    
+		align-items: center;    
+		div:not(.burger) {
+			margin-left: 15px;
+			font-size: 16px;
+		}
+	}
+
+	.burger {
+		display: flex;    
+		align-items: center;
+		justify-content: center;
+		width: 45px;
+		height: 45px;            
+		flex-direction: column;
+		background-color: #008cdb;            
+		padding: 0 12px;
+		border-radius: 50%;
+		span {
+			display: block;
+			height: 2px;
+			width: 100%;
+			background-color: #FFF;
+			margin: 2px 0;
+			flex: none;
+		}
+	}
+	.div-bk10 > div .div-bk10-b2 {
+		font-size: 29px;
+	}
+	.div-bk10 > div .div-bk10-b3 > div > span {
+		font-size: 24px;
+		line-height: 1.25;
+	}
+	.div-bk10 > div .div-bk10-b3 {
+		margin-top: 15px;
+	}
+	.div-bk10 > div .div-bk10-b1 {
+		margin-bottom: 40px;
+	}
+	.div-bk10 > div .div-bk10-b1 {
+		width: 100%;
+	}
+} 
+
+
+
+@media only screen and (max-width : 575px) {
+	.div-bk12 > div,
+	.div-bk10 > div,
+	.div-bk7 > div,
+	.div-bk8 > div,
+	.div-bk15 > div,
+	.div-bk5 > div,
+	.div-bk1 > div,
+	.contain {
+		width: 100%;
+		max-width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.div-bk1 > div .div-bk1-b3 > a,
+	.div-bk1 > div .div-bk1-b2 > div {
+		font-size: 22px;
+	}
+	.div-bk1 > div .div-bk1-b1 > div > a {
+		margin-left: 0;
+	}
+	.div-bk8 > div .div-bk8-b2 > ul > li .div-b8-r .div-b8-r-b3 {
+		display: flex;
+		-webkit-align-items: flex-start;
+		align-items: flex-start;
+		flex-direction: column;
+		height: auto;
+	}
+	.div-bk8 > div .div-bk8-b2 > ul > li .div-b8-r .div-b8-r-b3 > button {
+		margin-bottom: 0;
+		margin-top: 15px;
+	}
+	.div-bk8 > div .div-bk8-b2 > ul > li .div-b8-l .slid1,
+	.div-bk8 > div .div-bk8-b2 > ul > li .div-b8-l {
+	 width: 300px;
+ }
+ .slid2 {
+	overflow: hidden;
+}
+.div-bk8 > div .div-bk8-b2 > ul > li .div-b8-l .slid1 ul > li,
+.div-bk8 > div .div-bk8-b2 > ul > li .div-b8-l .slid1 ul > li img {
+	width: 300px;
+	height: auto;
+}
+.div-bk8 > div .div-bk8-b2 > ul > li .div-b8-l .slid1 {
+	height: 203px;
+}
+.div-bk8 > div .div-bk8-b2 > ul > li .div-b8-l .slid2 ul > li {
+ width: 86px;
+ height: 86px;
+}
+.div-bk8 > div .div-bk8-b2 > ul {
+ height: 900px;
+}
+.div-bk10 > div .div-bk10-b2 {
+ font-size: 20px;
+ line-height: 1.2;
+}
+.div-bk10 > div .div-bk10-b3 > div > span {
+ font-size: 20px;
+}
+.div-bk10 > div .div-bk10-b1 > div > span {
+ flex: none;
+}
+
+.div-bk10 > div .div-bk10-b1 > div > span {
+ width: 50px;
+ height: 50px;
+ font-size: 20px;
+ border-width: 3px;
+}
+.div-bk10 > div .div-bk10-b1 > div > div > div > div a, .div-bk10 > div .div-bk10-b1 > div > div > div > div {
+ font-size: 18px;
+}
+.div-bk10 > div .div-bk10-b1 > div {
+ margin-bottom: 15px;
+}
+.div-bk12 > div .div-bk12-b1 {		        
+	                flex-wrap: wrap;	                
+	                	                        	                
+	                        justify-content: center;
+}
+.div-bk12 > div .div-bk12-b1 > div {
+	width: 100%;
+	padding-top: 95px;
+	max-width: 300px;
+	
+	&:not(:last-child) {
+		margin-bottom: 45px;
+	}
+}
+.div-bk12 > div .div-bk12-b1 > div > span {
+	min-height: auto;
+}
+
+.div-bk12 > div .div-bk12-b1 .div-b3 {
+	margin-right: 0;
+}
+}//575
+
+
+
+@media only screen and (max-width : 480px) {
+	/**/
+	.div-bk1 > div .div-bk1-b3 > a, .div-bk1 > div .div-bk1-b2 > div {
+
+	}
+	.div-bk1 > div .div-bk1-b2 > div {
+		padding: 15px 20px;
+	}
+	.div-bk1 > div .div-bk1-b2 > div span {
+		display: block;
+	}
+	.div-bk1 > div .div-bk1-b2 {
+		width: 100%;
+	}
+	.div-bk8 > div .div-bk8-b2 > ul > li .div-b8-r .div-b8-r-b4 {
+		width: 300px;
+	}
+	.div-bk8 > div .div-bk8-b2 > ul {
+		height: 1130px;
+	}
+	.div-bk8 > div .div-bk8-b2 > ul > li .div-b8-r .div-b8-r-b2 .b1 {
+		margin-bottom: 25px;
+	}
+	.div-bk8 > div .div-bk8-b2 > ul > li .div-b8-r .div-b8-r-b2 {
+		display: flex;    
+		flex-direction: column;
+	}
+	.div-bk8 > div .div-bk8-b2 > ul > li .div-b8-r .div-b8-r-b1 {
+		font-size: 23px;
+	}
+	.div-bk8 > div .div-bk8-b2 {
+		margin-top: 94px;
+	}
+	.div-bk8 > div .div-bk8-b2 #next100,
+	.div-bk8 > div .div-bk8-b2 #prev100 {
+		margin-top: 0;
+		top: -80px;
+	}
+	.div-bk15 > div .div-bk15-b2 {
+		width: 100%;
+	}
+	.div-bk15 > div .div-bk15-b3 {
+		width: 100%;
+		margin-right: 0;
+	}
+	.div-bk15 > div .div-bk15-b3 > form {
+		width: 100%;
+		padding: 0 15px;
+	}
+	.div-bk15 > div .div-bk15-b3 > form > div > input {
+		width: 100%;
+	}
+	.div-bk15 > div .div-bk15-b3 > form > div > input {
+		margin-bottom: 22px;
+	}
+	.div-bk15 > div .div-bk15-b3 > form > div > button {
+		width: 100%;
+	}
+	.div-bk15 > div .div-bk15-b3 {
+		padding: 40px 0;
+	}
+	.div-bk15 > div .div-bk15-b3 > div > span {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+	.div-bk15 > div .div-bk15-b2 > div > div {
+		font-size: 25px;
+	}
+	.div-bk15 > div .div-bk15-b2 > div > div,
+	.div-bk15 > div .div-bk15-b2 > div > span {
+		padding-left: 0;
+	}
+	.div-bk15 > div .div-bk15-b2 > div {
+		padding: 20px;
+	}
+	.div-bk15 > div .div-bk15-b2 > div > span {
+		font-size: 17px;
+	}
+	.div-bk15 > div .div-bk15-b2 {
+		margin-left: 0;
+	}
+	.reveal-modal .modal-cont .div-form div > button,
+	.reveal-modal .modal-cont .div-form div > input {
+		width: 100%;
+	}
+	.reveal-modal .modal-cont > span {
+		font-size: 26px;
+	}
+	.close-reveal-modal {
+		top: -35px;
+		right: 0;
+	}
+	.reveal-modal .modal-cont {
+		padding: 30px 10px;
+	}
+	.reveal-modal {
+		width: calc(100% - 35px);
+		left: 50%;
+		transform: translateX(-50%);
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width : 375px) {
+ .div-bk1 > div .div-bk1-b1 > div > a > span {
+	 font-size: 20px;
+	 
+ }
+
+ /*Headings*/ 
+ .div-bk12 > div > span,
+ .div-bk10 > div > span,
+ .div-bk8 > div > span {
+	font-size: 25px;
+	line-height: 1.3;
+}
+
+/*Main Blocks*/
+.div-bk12,
+.div-bk15,
+.div-bk10, .div-bk8 {
+	padding: 40px 0;
+}
+.div-bk8 {
+	padding-bottom: 0;
+}
+.div-bk10 > div .div-bk10-b3 > div > span {
+	padding-left: 70px;
+}
+.div-bk12 > div .div-bk12-b1 {
+	margin-top: 32px;
+}
+}
+
+@media only screen and (max-width : 360px) {
+ /**/
+ .div-bk1 > div .div-bk1-b3 > a, .div-bk1 > div .div-bk1-b2 > div {
+	 font-size: 21px;
+ }
+ 
+}
+
+
+@media only screen and (max-width : 320px) {
+	body, body > * {
+		width: auto;
+		min-width: 320px;
+	}
+}
