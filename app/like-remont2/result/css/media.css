@@ -38,6 +38,7 @@ body {
     color: #008cdb; }
 
 @media only screen and (max-width: 1199px) {
+  .div-bk9 > div,
   .div-bk16 > div,
   .div-futer > div,
   .div-bk11 > div,
@@ -58,6 +59,7 @@ body {
   .contain {
     margin-left: auto;
     margin-right: auto; }
+  .div-bk9,
   .div-bk12,
   .div-bk10,
   .div-bk8 {
@@ -66,9 +68,12 @@ body {
   .div-bk8 {
     padding-top: 60px;
     padding-bottom: 0; }
+  .div-bk9 {
+    height: auto; }
   /*Blocks Bg*/
   .div-bk15 {
     background-size: cover; }
+  .div-bk9 > div > span,
   .heading-2,
   .div-bk12 > div > span,
   .div-bk10 > div > span,
@@ -499,6 +504,7 @@ body {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {
+  .div-bk9 > div,
   .div-bk16 > div,
   .div-futer > div,
   .div-bk11 > div,
@@ -634,10 +640,13 @@ body {
     float: none;
     margin-left: unset;
     text-align: center;
-    background: none; } }
+    background: none; }
+  .div-bk9 > div > div {
+    margin-left: 200px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
+  .div-bk9 > div,
   .div-bk16 > div,
   .div-futer > div,
   .div-bk11 > div,
@@ -750,9 +759,16 @@ body {
   .div-futer > div .div-fu-b2 {
     width: 100%; }
   .div-futer > div .div-fu-b1 {
-    padding-bottom: 29px; } }
+    padding-bottom: 29px; }
+  .div-bk9 > div > div {
+    margin-left: 110px; }
+  .div-bk9 > div > div > div {
+    font-size: 23px; }
+  .div-bk9 > div > div > div {
+    background-position: left top 4px; } }
 
 @media only screen and (max-width: 640px) {
+  .div-bk9 > div,
   .div-bk16 > div,
   .div-futer > div,
   .div-bk11 > div,
@@ -877,6 +893,7 @@ body {
     font-size: 15px; } }
 
 @media only screen and (max-width: 575px) {
+  .div-bk9 > div,
   .div-bk16 > div,
   .div-futer > div,
   .div-bk11 > div,
@@ -990,7 +1007,12 @@ body {
   .div-bk12 > div .div-bk12-b1 .div-b3 {
     margin-right: 0; }
   .div-bk11 > div > div {
-    font-size: 29px; } }
+    font-size: 29px; }
+  .div-bk9 > div > div {
+    margin-left: 40px; }
+  .div-bk9 > div > div > div {
+    line-height: 1.2;
+    background-position: left top 2px; } }
 
 @media only screen and (max-width: 480px) {
   /**/
@@ -1080,12 +1102,17 @@ body {
     padding-left: 0;
     padding-top: 160px;
     background-position: top center;
-    text-align: center; } }
+    text-align: center; }
+  .div-bk9 > div > div {
+    margin-left: 0; } }
 
 @media only screen and (max-width: 375px) {
   .div-bk1 > div .div-bk1-b1 > div > a > span {
     font-size: 20px; }
+  .div-bk9 > div > div {
+    margin-top: 20px; }
   /*Headings*/
+  .div-bk9 > div > span,
   .heading-2,
   .div-bk12 > div > span,
   .div-bk10 > div > span,
@@ -1093,10 +1120,15 @@ body {
     font-size: 25px;
     line-height: 1.3; }
   /*Main Blocks*/
+  .div-bk9,
   .div-bk12,
   .div-bk15,
   .div-bk10, .div-bk8 {
     padding: 40px 0; }
+  .div-bk9 > div > div > div {
+    font-size: 20px; }
+  .div-bk9 > div > div > div:last-child {
+    margin-bottom: 0; }
   .div-bk7 > div > span,
   .div-bk6 > div > span,
   .div-bk4 > div > span {
