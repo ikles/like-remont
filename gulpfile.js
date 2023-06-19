@@ -12,17 +12,17 @@ var gulp       = require('gulp'), // Подключаем Gulp
 	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
 gulp.task('sass', function(){ // Создаем таск Sass
-	return gulp.src('app/like-remont2/scss/**/*.scss') // Берем источник
+	return gulp.src('app/mind/scss/**/*.scss') // Берем источник
 		.pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
 		.pipe(autoprefixer(['last 5 versions'], { cascade: true })) // Создаем префиксы
-		.pipe(gulp.dest('app/like-remont2/result/css')) // Выгружаем результата в папку app/like-remont2/css
+		.pipe(gulp.dest('app/mind/result/css')) // Выгружаем результата в папку app/mind/css
 		.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 	});
 
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
 	browserSync({ // Выполняем browserSync
 		server: { // Определяем параметры сервера
-			baseDir: 'app/like-remont2/result' // Директория для сервера - app
+			baseDir: 'app/mind/result' // Директория для сервера - app
 		},
 		notify: false // Отключаем уведомления
 	});
@@ -32,37 +32,37 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 var fileinclude = require('gulp-file-include');
 
 gulp.task('fileinclude', function() {
-	gulp.src(['app/like-remont2/*.html'])
+	gulp.src(['app/mind/*.html'])
 	.pipe(fileinclude({
 		prefix: '@@',
 		basepath: '@file'
 	}))
-	.pipe(gulp.dest('app/like-remont2/result'));
+	.pipe(gulp.dest('app/mind/result'));
 });
 
 /*gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
-		'app/like-remont2/libs/jquery/dist/jquery.min.js', // Берем jQuery
-		'app/like-remont2/libs/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
+		'app/mind/libs/jquery/dist/jquery.min.js', // Берем jQuery
+		'app/mind/libs/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл
-		.pipe(gulp.dest('app/like-remont2/js')); // Выгружаем в папку app/like-remont2/js
+		.pipe(gulp.dest('app/mind/js')); // Выгружаем в папку app/mind/js
 	});*/
 
 /*gulp.task('css-libs', ['sass'], function() {
-	return gulp.src('app/like-remont2/css/libs.css') // Выбираем файл для минификации
+	return gulp.src('app/mind/css/libs.css') // Выбираем файл для минификации
 		.pipe(cssnano()) // Сжимаем
 		.pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
-		.pipe(gulp.dest('app/like-remont2/css')); // Выгружаем в папку app/like-remont2/css
+		.pipe(gulp.dest('app/mind/css')); // Выгружаем в папку app/mind/css
 	});*/
 
 gulp.task('watch', ['browser-sync', 'fileinclude'], function() {
-	gulp.watch('app/like-remont2/scss/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
-	gulp.watch('app/like-remont2/*.html', ['fileinclude'], browserSync.reload); // Наблюдение за HTML файлами в корне проекта
-	gulp.watch('app/like-remont2/var/*.html', ['fileinclude'], browserSync.reload); // Наблюдение за HTML файлами var
-	gulp.watch('app/like-remont2/result/*.html', browserSync.reload); // Наблюдение за HTML файлами в result
-	gulp.watch('app/like-remont2/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
+	gulp.watch('app/mind/scss/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
+	gulp.watch('app/mind/*.html', ['fileinclude'], browserSync.reload); // Наблюдение за HTML файлами в корне проекта
+	gulp.watch('app/mind/var/*.html', ['fileinclude'], browserSync.reload); // Наблюдение за HTML файлами var
+	gulp.watch('app/mind/result/*.html', browserSync.reload); // Наблюдение за HTML файлами в result
+	gulp.watch('app/mind/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
 });
 
 gulp.task('clean', function() {
@@ -70,31 +70,31 @@ gulp.task('clean', function() {
 });
 
 gulp.task('img', function() {
-	return gulp.src('app/like-remont2/result/img/**/*') // Берем все изображения из app
+	return gulp.src('app/mind/result/img/**/*') // Берем все изображения из app
 		.pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
 			interlaced: true,
 			progressive: true,
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
 		})))
-		.pipe(gulp.dest('app/like-remont2/result/img')); // Выгружаем на продакшен
+		.pipe(gulp.dest('app/mind/result/img')); // Выгружаем на продакшен
 	});
 
 gulp.task('build', ['clean', 'img', 'sass', 'fileinclude'], function() {
 
 /*	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
-		'app/like-remont2/css/main.css',
-		'app/like-remont2/css/libs.min.css'
+		'app/mind/css/main.css',
+		'app/mind/css/libs.min.css'
 		])
 	.pipe(gulp.dest('dist/css'))*/
 
-	var buildFonts = gulp.src('app/like-remont2/fonts/**/*') // Переносим шрифты в продакшен
+	var buildFonts = gulp.src('app/mind/fonts/**/*') // Переносим шрифты в продакшен
 	.pipe(gulp.dest('dist/fonts'))
 
-	var buildJs = gulp.src('app/like-remont2/js/**/*') // Переносим скрипты в продакшен
+	var buildJs = gulp.src('app/mind/js/**/*') // Переносим скрипты в продакшен
 	.pipe(gulp.dest('dist/js'))
 
-	/*var buildHtml = gulp.src('app/like-remont2/*.html')
+	/*var buildHtml = gulp.src('app/mind/*.html')
 	.pipe(gulp.dest('dist'));*/
 	 // Переносим HTML в продакшен
 

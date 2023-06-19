@@ -39,6 +39,14 @@ body {
 	display: none;
 }
 
+.show-640 {
+  display: none;
+}
+
+.show-1199 {
+  display: none;
+}
+
 /*********************/
 
 
@@ -559,6 +567,16 @@ margin-top: 0;
 .hide-1199 {
 	display: none !important;
 }
+    
+    .show-1199 {
+    display: block;
+  }
+  .div-top-menu > ul > li > a:hover {
+    text-decoration: none;
+  }
+  .div-bk8 > div .div-bk8-b2 > ul > li .div-b8-r .div-b8-r-b5 {
+    position: absolute;
+  }
 }//1199
 
 
@@ -867,6 +885,13 @@ margin-top: 0;
 		max-width: 530px;
 	}
 
+    .hide-640 {
+    display: none;
+  }
+  .show-640 {
+    display: block;
+  }
+
 	.div-bk4 > div > span {
     width: 100%;
   }
@@ -977,6 +1002,7 @@ margin-top: 0;
 	.tarif-name {
 		font-size: 15px;
 	}
+
 } 
 
 
@@ -1258,6 +1284,9 @@ margin-top: 0;
   .div-bk9 > div > div {
     margin-left: 0;
   }
+  .div-bk8 > div .div-bk8-b2 > ul > li .div-b8-r .div-b8-r-b5 {
+  width: 304px;
+}
 }
 
 @media only screen and (max-width : 375px) {
@@ -1322,6 +1351,7 @@ margin-top: 0;
 .div-futer > div .div-fu-b1 > span > span {
 	text-align: center;
 }
+
 }
 
 @media only screen and (max-width : 360px) {
