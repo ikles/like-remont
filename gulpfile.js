@@ -12,17 +12,17 @@ var gulp       = require('gulp'), // Подключаем Gulp
 	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
 gulp.task('sass', function(){ // Создаем таск Sass
-	return gulp.src('app/mind/scss/**/*.scss') // Берем источник
+	return gulp.src('app/getfinance/scss/**/*.scss') // Берем источник
 		.pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
 		.pipe(autoprefixer(['last 5 versions'], { cascade: true })) // Создаем префиксы
-		.pipe(gulp.dest('app/mind/result/css')) // Выгружаем результата в папку app/mind/css
+		.pipe(gulp.dest('app/getfinance/result/css')) // Выгружаем результата в папку app/getfinance/css
 		.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 	});
 
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
 	browserSync({ // Выполняем browserSync
 		server: { // Определяем параметры сервера
-			baseDir: 'app/mind/result' // Директория для сервера - app
+			baseDir: 'app/getfinance/result' // Директория для сервера - app
 		},
 		notify: false // Отключаем уведомления
 	});
@@ -32,37 +32,37 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 var fileinclude = require('gulp-file-include');
 
 gulp.task('fileinclude', function() {
-	gulp.src(['app/mind/*.html'])
+	gulp.src(['app/getfinance/*.html'])
 	.pipe(fileinclude({
 		prefix: '@@',
 		basepath: '@file'
 	}))
-	.pipe(gulp.dest('app/mind/result'));
+	.pipe(gulp.dest('app/getfinance/result'));
 });
 
 /*gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
-		'app/mind/libs/jquery/dist/jquery.min.js', // Берем jQuery
-		'app/mind/libs/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
+		'app/getfinance/libs/jquery/dist/jquery.min.js', // Берем jQuery
+		'app/getfinance/libs/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл
-		.pipe(gulp.dest('app/mind/js')); // Выгружаем в папку app/mind/js
+		.pipe(gulp.dest('app/getfinance/js')); // Выгружаем в папку app/getfinance/js
 	});*/
 
 /*gulp.task('css-libs', ['sass'], function() {
-	return gulp.src('app/mind/css/libs.css') // Выбираем файл для минификации
+	return gulp.src('app/getfinance/css/libs.css') // Выбираем файл для минификации
 		.pipe(cssnano()) // Сжимаем
 		.pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
-		.pipe(gulp.dest('app/mind/css')); // Выгружаем в папку app/mind/css
+		.pipe(gulp.dest('app/getfinance/css')); // Выгружаем в папку app/getfinance/css
 	});*/
 
 gulp.task('watch', ['browser-sync', 'fileinclude'], function() {
-	gulp.watch('app/mind/scss/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
-	gulp.watch('app/mind/*.html', ['fileinclude'], browserSync.reload); // Наблюдение за HTML файлами в корне проекта
-	gulp.watch('app/mind/var/*.html', ['fileinclude'], browserSync.reload); // Наблюдение за HTML файлами var
-	gulp.watch('app/mind/result/*.html', browserSync.reload); // Наблюдение за HTML файлами в result
-	gulp.watch('app/mind/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
+	gulp.watch('app/getfinance/scss/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
+	gulp.watch('app/getfinance/*.html', ['fileinclude'], browserSync.reload); // Наблюдение за HTML файлами в корне проекта
+	gulp.watch('app/getfinance/var/*.html', ['fileinclude'], browserSync.reload); // Наблюдение за HTML файлами var
+	gulp.watch('app/getfinance/result/*.html', browserSync.reload); // Наблюдение за HTML файлами в result
+	gulp.watch('app/getfinance/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
 });
 
 gulp.task('clean', function() {
@@ -70,31 +70,31 @@ gulp.task('clean', function() {
 });
 
 gulp.task('img', function() {
-	return gulp.src('app/mind/result/img/**/*') // Берем все изображения из app
+	return gulp.src('app/getfinance/result/img/**/*') // Берем все изображения из app
 		.pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
 			interlaced: true,
 			progressive: true,
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
 		})))
-		.pipe(gulp.dest('app/mind/result/img')); // Выгружаем на продакшен
+		.pipe(gulp.dest('app/getfinance/result/img')); // Выгружаем на продакшен
 	});
 
 gulp.task('build', ['clean', 'img', 'sass', 'fileinclude'], function() {
 
 /*	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
-		'app/mind/css/main.css',
-		'app/mind/css/libs.min.css'
+		'app/getfinance/css/main.css',
+		'app/getfinance/css/libs.min.css'
 		])
 	.pipe(gulp.dest('dist/css'))*/
 
-	var buildFonts = gulp.src('app/mind/fonts/**/*') // Переносим шрифты в продакшен
+	var buildFonts = gulp.src('app/getfinance/fonts/**/*') // Переносим шрифты в продакшен
 	.pipe(gulp.dest('dist/fonts'))
 
-	var buildJs = gulp.src('app/mind/js/**/*') // Переносим скрипты в продакшен
+	var buildJs = gulp.src('app/getfinance/js/**/*') // Переносим скрипты в продакшен
 	.pipe(gulp.dest('dist/js'))
 
-	/*var buildHtml = gulp.src('app/mind/*.html')
+	/*var buildHtml = gulp.src('app/getfinance/*.html')
 	.pipe(gulp.dest('dist'));*/
 	 // Переносим HTML в продакшен
 

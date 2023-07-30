@@ -9,8 +9,7 @@
   <title>Главная</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
@@ -37,10 +36,12 @@
           <li><a href="">О проекте</a></li>
         </ul>        
         <button>Добавить отзыв</button>
+        <a href="" class="close"></a>
       </div>
+      <span class="burger"></span>
     </div>
   </div>
-</div>
+</div>  
     <main class="main">
       <div class="hero">
         <div class="contain">
@@ -50,7 +51,7 @@
               <div>для создания интеллект карт</div>
               <p>Подберите удобные сервисы для создания интеллект карт</p>
               <form>
-                <input type="text" placeholder="Ваш телефон" />
+                <input type="text" placeholder="" />
                 <input type="submit">
               </form>
             </div>
@@ -58,17 +59,22 @@
           </div>
         </div>
       </div>
-      <div class="mcontent">
+      <div class="mcontent">        
         <div class="contain">
-          <div class="row">
-            <div class="col-l">              
-              <ul class="sort">
-                <li><a href="" class="active">Все сервисы</a></li>
-                <li><a href="">Бесплатные</a></li>
-                <li><a href="">Лидеры рынка</a></li>
-              </ul>
-              <div class="pcards">
-                <div class="pcard">
+          <div class="tabs sort__tabs">
+            <ul class="tabs__list sort">
+              <li class="tabs__list-item active">Все сервисы</li>
+              <li class="tabs__list-item">Бесплатные</li>  
+              <li class="tabs__list-item">Лидеры рынка</li>  
+            </ul>         
+            <div class="row">
+              <div class="col-l">    
+
+
+               <ul class="tabs__content-list">
+                <li class="tabs__content-list-item active">
+                  <div class="pcards">
+                    <div class="pcard">
   <div class="pcard__top">
     <div class="pcard__img-w"><img src="img/pcard_1.jpg"></div>
     <div class="pcard__info">
@@ -90,7 +96,7 @@
   <p>Картографическое программное обеспечение компании, в основе которого лежат интеллектуальные (ментальные) карты.</p>
 </div>
 
-                <div class="pcard">
+                    <div class="pcard">
   <div class="pcard__top">
     <div class="pcard__img-w"><img src="img/pcard_2.jpg"></div>
     <div class="pcard__info">
@@ -112,7 +118,7 @@
   <p>Веб-доска для визуализации информации, которая позволяет команде работать удаленно над совместным проектом.</p>
 </div>
 
-                <div class="pcard">
+                    <div class="pcard">
   <div class="pcard__top">
     <div class="pcard__img-w"><img src="img/pcard_3.jpg"></div>
     <div class="pcard__info">
@@ -134,7 +140,7 @@
   <p>Программа для создания ментальных карт на компьютере, планшете или смартфоне.</p>
 </div>
 
-                <div class="pcard">
+                    <div class="pcard">
   <div class="pcard__top">
     <div class="pcard__img-w"><img src="img/pcard_4.jpg"></div>
     <div class="pcard__info">
@@ -156,7 +162,7 @@
   <p>Программа для создания интеллект-карт (mindmap), позволяющих структурировать информацию в виде древовидных диаграмм или таблиц.</p>
 </div>
 
-                <div class="pcard">
+                    <div class="pcard">
   <div class="pcard__top">
     <div class="pcard__img-w"><img src="img/pcard_5.jpg"></div>
     <div class="pcard__info">
@@ -177,7 +183,237 @@
   <div>Создание интеллект-карт</div>
   <p>Веб-платформа для создания и совместного редактирования ментальных карт.</p>
 </div>
-              </div>
+                  </div>
+                </li>
+                <li class="tabs__content-list-item">
+                  <div class="pcards">
+                    <div class="pcard">
+  <div class="pcard__top">
+    <div class="pcard__img-w"><img src="img/pcard_2.jpg"></div>
+    <div class="pcard__info">
+      <div class="pcard__info-row">
+        <p>Miro</p>
+        <a href="">Веб-сайт</a>
+      </div>
+      <div class="rating">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="star-o"></span>
+        <div class="">1</div>
+      </div>
+    </div>
+  </div>
+  <div>Онлайн-платформа для совместной работы</div>
+  <p>Веб-доска для визуализации информации, которая позволяет команде работать удаленно над совместным проектом.</p>
+</div>
+                    <div class="pcard">
+  <div class="pcard__top">
+    <div class="pcard__img-w"><img src="img/pcard_1.jpg"></div>
+    <div class="pcard__info">
+      <div class="pcard__info-row">
+        <p>MindManager</p>
+        <a href="">Веб-сайт</a>
+      </div>
+      <div class="rating">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="star-o"></span>
+        <div class="">1</div>
+      </div>
+    </div>
+  </div>
+  <div>Программное обеспечение для составления интеллект-карт</div>
+  <p>Картографическое программное обеспечение компании, в основе которого лежат интеллектуальные (ментальные) карты.</p>
+</div>
+
+
+                    <div class="pcard">
+  <div class="pcard__top">
+    <div class="pcard__img-w"><img src="img/pcard_3.jpg"></div>
+    <div class="pcard__info">
+      <div class="pcard__info-row">
+        <p>SimpleMind</p>
+        <a href="">Веб-сайт</a>
+      </div>
+      <div class="rating">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="star-o"></span>
+        <div class="">1</div>
+      </div>
+    </div>
+  </div>
+  <div>Программа для создания ментальных карт</div>
+  <p>Программа для создания ментальных карт на компьютере, планшете или смартфоне.</p>
+</div>
+
+                    <div class="pcard">
+  <div class="pcard__top">
+    <div class="pcard__img-w"><img src="img/pcard_4.jpg"></div>
+    <div class="pcard__info">
+      <div class="pcard__info-row">
+        <p>XMind</p>
+        <a href="">Веб-сайт</a>
+      </div>
+      <div class="rating">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="star-o"></span>
+        <div class="">1</div>
+      </div>
+    </div>
+  </div>
+  <div>Инструмент для создания ментальных карт</div>
+  <p>Программа для создания интеллект-карт (mindmap), позволяющих структурировать информацию в виде древовидных диаграмм или таблиц.</p>
+</div>
+
+                    <div class="pcard">
+  <div class="pcard__top">
+    <div class="pcard__img-w"><img src="img/pcard_5.jpg"></div>
+    <div class="pcard__info">
+      <div class="pcard__info-row">
+        <p>Coggle</p>
+        <a href="">Веб-сайт</a>
+      </div>
+      <div class="rating">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="star-o"></span>
+        <div class="">1</div>
+      </div>
+    </div>
+  </div>
+  <div>Создание интеллект-карт</div>
+  <p>Веб-платформа для создания и совместного редактирования ментальных карт.</p>
+</div>
+                  </div>
+                </li>
+                <li class="tabs__content-list-item">
+                  <div class="pcards">
+                    <div class="pcard">
+  <div class="pcard__top">
+    <div class="pcard__img-w"><img src="img/pcard_3.jpg"></div>
+    <div class="pcard__info">
+      <div class="pcard__info-row">
+        <p>SimpleMind</p>
+        <a href="">Веб-сайт</a>
+      </div>
+      <div class="rating">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="star-o"></span>
+        <div class="">1</div>
+      </div>
+    </div>
+  </div>
+  <div>Программа для создания ментальных карт</div>
+  <p>Программа для создания ментальных карт на компьютере, планшете или смартфоне.</p>
+</div>
+                    <div class="pcard">
+  <div class="pcard__top">
+    <div class="pcard__img-w"><img src="img/pcard_1.jpg"></div>
+    <div class="pcard__info">
+      <div class="pcard__info-row">
+        <p>MindManager</p>
+        <a href="">Веб-сайт</a>
+      </div>
+      <div class="rating">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="star-o"></span>
+        <div class="">1</div>
+      </div>
+    </div>
+  </div>
+  <div>Программное обеспечение для составления интеллект-карт</div>
+  <p>Картографическое программное обеспечение компании, в основе которого лежат интеллектуальные (ментальные) карты.</p>
+</div>
+
+                    <div class="pcard">
+  <div class="pcard__top">
+    <div class="pcard__img-w"><img src="img/pcard_2.jpg"></div>
+    <div class="pcard__info">
+      <div class="pcard__info-row">
+        <p>Miro</p>
+        <a href="">Веб-сайт</a>
+      </div>
+      <div class="rating">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="star-o"></span>
+        <div class="">1</div>
+      </div>
+    </div>
+  </div>
+  <div>Онлайн-платформа для совместной работы</div>
+  <p>Веб-доска для визуализации информации, которая позволяет команде работать удаленно над совместным проектом.</p>
+</div>
+
+
+                    <div class="pcard">
+  <div class="pcard__top">
+    <div class="pcard__img-w"><img src="img/pcard_4.jpg"></div>
+    <div class="pcard__info">
+      <div class="pcard__info-row">
+        <p>XMind</p>
+        <a href="">Веб-сайт</a>
+      </div>
+      <div class="rating">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="star-o"></span>
+        <div class="">1</div>
+      </div>
+    </div>
+  </div>
+  <div>Инструмент для создания ментальных карт</div>
+  <p>Программа для создания интеллект-карт (mindmap), позволяющих структурировать информацию в виде древовидных диаграмм или таблиц.</p>
+</div>
+
+                    <div class="pcard">
+  <div class="pcard__top">
+    <div class="pcard__img-w"><img src="img/pcard_5.jpg"></div>
+    <div class="pcard__info">
+      <div class="pcard__info-row">
+        <p>Coggle</p>
+        <a href="">Веб-сайт</a>
+      </div>
+      <div class="rating">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="star-o"></span>
+        <div class="">1</div>
+      </div>
+    </div>
+  </div>
+  <div>Создание интеллект-карт</div>
+  <p>Веб-платформа для создания и совместного редактирования ментальных карт.</p>
+</div>
+                  </div>
+                </li>
+              </ul>
+
+              
               <div class="pcards__btn-w">
                 <button>Показать ещё</button>   
               </div>
@@ -186,10 +422,13 @@
               <div class="rfilter">
                 <div>Подбор по параметрам</div>
                 <form>
-                  <label>
+                  <label class="has-tooltip">
                     <input type="checkbox">
                     <span></span>
-                    <div>Вложение мультимедиа <sup title="Подсказка">?</sup></div>
+                    <div>Вложение мультимедиа <sup>
+                      ?
+                      <span>Выгрузка полученных данных в формате PNG для дальнейшей обработки</span>
+                    </sup></div>
                   </label>
                   <label>
                     <input type="checkbox">
@@ -201,14 +440,140 @@
                     <span></span>
                     <div>Гостевой доступ</div>
                   </label>
-                </form>
+                  <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>История изменений</div>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>Комментарии</div>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>Режим рисования</div>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>Совместная работа</div>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>Шаблоны</div>
+                  </label>
+                  <label class="has-tooltip">
+                    <input type="checkbox">
+                    <span></span>
+                    <div>Экспорт в PNG/PPT/SVG
+                      <sup>
+                        ?
+                        <span>Выгрузка полученных данных в формате PNG для дальнейшей обработки</span>
+                      </sup>
+                    </div>
+                  </label>
+
+
+                  <div class="accordion-container"> 
+                    <div class="accordion-item">
+                      <div class="accordion-header active-header">Платформы</div>
+                      <div class="accordion-content">
+                       <label>
+                        <input type="checkbox">
+                        <span></span>
+                        <div>iOS</div>
+                      </label>
+                      <label>
+                        <input type="checkbox">
+                        <span></span>
+                        <div>Android</div>
+                      </label>
+                      <label>
+                        <input type="checkbox">
+                        <span></span>
+                        <div>Веб-приложение</div>
+                      </label>
+                      <label>
+                        <input type="checkbox">
+                        <span></span>
+                        <div>Десктопный софт</div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <div class="accordion-header">Модель оплаты</div>
+                    <div class="accordion-content">
+                     <label>
+                      <input type="checkbox">
+                      <span></span>
+                      <div>iOS</div>
+                    </label>
+                    <label>
+                      <input type="checkbox">
+                      <span></span>
+                      <div>Android</div>
+                    </label>     
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header">Язык интерфейса</div>
+                  <div class="accordion-content">
+                   <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>iOS</div>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>Android</div>
+                  </label>     
+                </div>
               </div>
+              <div class="accordion-item">
+                <div class="accordion-header">Установка</div>
+                <div class="accordion-content">
+                 <label>
+                  <input type="checkbox">
+                  <span></span>
+                  <div>iOS</div>
+                </label>
+                <label>
+                  <input type="checkbox">
+                  <span></span>
+                  <div>Android</div>
+                </label>     
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">Страна разработки</div>
+              <div class="accordion-content">
+               <label>
+                <input type="checkbox">
+                <span></span>
+                <div>iOS</div>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span></span>
+                <div>Android</div>
+              </label>     
             </div>
           </div>
         </div>
-      </div>
-    </main>
-    <div class="footer">
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<div class="footer">
   <div class="contain">    
       <div class="header__row">
         <a href="index.html" class="logo">Mind-mapping.ru</a>
@@ -228,13 +593,11 @@
   </div>
 </div>
 
-  </div>
-  <!--wrapper-->
+</div>
+<!--wrapper-->
 
-  <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/slick.js"></script>
-  <script src="js/nouislider.js"></script>
-  <script src="js/wNumb.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.js"></script>  
   <script src="js/select2.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/common.js"></script>

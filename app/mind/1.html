@@ -29,7 +29,7 @@
               <div>для создания интеллект карт</div>
               <p>Подберите удобные сервисы для создания интеллект карт</p>
               <form>
-                <input type="text" placeholder="Ваш телефон" />
+                <input type="text" placeholder="" />
                 <input type="submit">
               </form>
             </div>
@@ -37,51 +37,136 @@
           </div>
         </div>
       </div>
-      <div class="mcontent">
+      <div class="mcontent">        
         <div class="contain">
-          <div class="row">
-            <div class="col-l">              
-              <ul class="sort">
-                <li><a href="" class="active">Все сервисы</a></li>
-                <li><a href="">Бесплатные</a></li>
-                <li><a href="">Лидеры рынка</a></li>
+          <div class="tabs sort__tabs">
+            <ul class="tabs__list sort">
+              <li class="tabs__list-item active">Все сервисы</li>
+              <li class="tabs__list-item">Бесплатные</li>  
+              <li class="tabs__list-item">Лидеры рынка</li>  
+            </ul>         
+            <div class="row">
+              <div class="col-l">    
+
+
+               <ul class="tabs__content-list">
+                <li class="tabs__content-list-item active">
+                  <div class="pcards">
+                    @@include('var/_pcard.html',{
+                      "img":"img/pcard_1.jpg",
+                      "title":"MindManager",
+                      "info":"Программное обеспечение для составления интеллект-карт",
+                      "text":"Картографическое программное обеспечение компании, в основе которого лежат интеллектуальные (ментальные) карты."
+                    })
+
+                    @@include('var/_pcard.html',{
+                      "img":"img/pcard_2.jpg",
+                      "title":"Miro",
+                      "info":"Онлайн-платформа для совместной работы",
+                      "text":"Веб-доска для визуализации информации, которая позволяет команде работать удаленно над совместным проектом."
+                    })
+
+                    @@include('var/_pcard.html',{
+                      "img":"img/pcard_3.jpg",
+                      "title":"SimpleMind",
+                      "info":"Программа для создания ментальных карт",
+                      "text":"Программа для создания ментальных карт на компьютере, планшете или смартфоне."
+                    })
+
+                    @@include('var/_pcard.html',{
+                      "img":"img/pcard_4.jpg",
+                      "title":"XMind",
+                      "info":"Инструмент для создания ментальных карт",
+                      "text":"Программа для создания интеллект-карт (mindmap), позволяющих структурировать информацию в виде древовидных диаграмм или таблиц."
+                    })
+
+                    @@include('var/_pcard.html',{
+                      "img":"img/pcard_5.jpg",
+                      "title":"Coggle",
+                      "info":"Создание интеллект-карт",
+                      "text":"Веб-платформа для создания и совместного редактирования ментальных карт."
+                    })
+                  </div>
+                </li>
+                <li class="tabs__content-list-item">
+                  <div class="pcards">
+                    @@include('var/_pcard.html',{
+                      "img":"img/pcard_2.jpg",
+                      "title":"Miro",
+                      "info":"Онлайн-платформа для совместной работы",
+                      "text":"Веб-доска для визуализации информации, которая позволяет команде работать удаленно над совместным проектом."
+                    })
+                    @@include('var/_pcard.html',{
+                      "img":"img/pcard_1.jpg",
+                      "title":"MindManager",
+                      "info":"Программное обеспечение для составления интеллект-карт",
+                      "text":"Картографическое программное обеспечение компании, в основе которого лежат интеллектуальные (ментальные) карты."
+                    })
+
+
+                    @@include('var/_pcard.html',{
+                      "img":"img/pcard_3.jpg",
+                      "title":"SimpleMind",
+                      "info":"Программа для создания ментальных карт",
+                      "text":"Программа для создания ментальных карт на компьютере, планшете или смартфоне."
+                    })
+
+                    @@include('var/_pcard.html',{
+                      "img":"img/pcard_4.jpg",
+                      "title":"XMind",
+                      "info":"Инструмент для создания ментальных карт",
+                      "text":"Программа для создания интеллект-карт (mindmap), позволяющих структурировать информацию в виде древовидных диаграмм или таблиц."
+                    })
+
+                    @@include('var/_pcard.html',{
+                      "img":"img/pcard_5.jpg",
+                      "title":"Coggle",
+                      "info":"Создание интеллект-карт",
+                      "text":"Веб-платформа для создания и совместного редактирования ментальных карт."
+                    })
+                  </div>
+                </li>
+                <li class="tabs__content-list-item">
+                  <div class="pcards">
+                    @@include('var/_pcard.html',{
+                      "img":"img/pcard_3.jpg",
+                      "title":"SimpleMind",
+                      "info":"Программа для создания ментальных карт",
+                      "text":"Программа для создания ментальных карт на компьютере, планшете или смартфоне."
+                    })
+                    @@include('var/_pcard.html',{
+                      "img":"img/pcard_1.jpg",
+                      "title":"MindManager",
+                      "info":"Программное обеспечение для составления интеллект-карт",
+                      "text":"Картографическое программное обеспечение компании, в основе которого лежат интеллектуальные (ментальные) карты."
+                    })
+
+                    @@include('var/_pcard.html',{
+                      "img":"img/pcard_2.jpg",
+                      "title":"Miro",
+                      "info":"Онлайн-платформа для совместной работы",
+                      "text":"Веб-доска для визуализации информации, которая позволяет команде работать удаленно над совместным проектом."
+                    })
+
+
+                    @@include('var/_pcard.html',{
+                      "img":"img/pcard_4.jpg",
+                      "title":"XMind",
+                      "info":"Инструмент для создания ментальных карт",
+                      "text":"Программа для создания интеллект-карт (mindmap), позволяющих структурировать информацию в виде древовидных диаграмм или таблиц."
+                    })
+
+                    @@include('var/_pcard.html',{
+                      "img":"img/pcard_5.jpg",
+                      "title":"Coggle",
+                      "info":"Создание интеллект-карт",
+                      "text":"Веб-платформа для создания и совместного редактирования ментальных карт."
+                    })
+                  </div>
+                </li>
               </ul>
-              <div class="pcards">
-                @@include('var/_pcard.html',{
-                  "img":"img/pcard_1.jpg",
-                  "title":"MindManager",
-                  "info":"Программное обеспечение для составления интеллект-карт",
-                  "text":"Картографическое программное обеспечение компании, в основе которого лежат интеллектуальные (ментальные) карты."
-                })
 
-                @@include('var/_pcard.html',{
-                  "img":"img/pcard_2.jpg",
-                  "title":"Miro",
-                  "info":"Онлайн-платформа для совместной работы",
-                  "text":"Веб-доска для визуализации информации, которая позволяет команде работать удаленно над совместным проектом."
-                })
-
-                @@include('var/_pcard.html',{
-                  "img":"img/pcard_3.jpg",
-                  "title":"SimpleMind",
-                  "info":"Программа для создания ментальных карт",
-                  "text":"Программа для создания ментальных карт на компьютере, планшете или смартфоне."
-                })
-
-                @@include('var/_pcard.html',{
-                  "img":"img/pcard_4.jpg",
-                  "title":"XMind",
-                  "info":"Инструмент для создания ментальных карт",
-                  "text":"Программа для создания интеллект-карт (mindmap), позволяющих структурировать информацию в виде древовидных диаграмм или таблиц."
-                })
-
-                @@include('var/_pcard.html',{
-                  "img":"img/pcard_5.jpg",
-                  "title":"Coggle",
-                  "info":"Создание интеллект-карт",
-                  "text":"Веб-платформа для создания и совместного редактирования ментальных карт."
-                })
-              </div>
+              
               <div class="pcards__btn-w">
                 <button>Показать ещё</button>   
               </div>
@@ -90,10 +175,13 @@
               <div class="rfilter">
                 <div>Подбор по параметрам</div>
                 <form>
-                  <label>
+                  <label class="has-tooltip">
                     <input type="checkbox">
                     <span></span>
-                    <div>Вложение мультимедиа <sup title="Подсказка">?</sup></div>
+                    <div>Вложение мультимедиа <sup>
+                      ?
+                      <span>Выгрузка полученных данных в формате PNG для дальнейшей обработки</span>
+                    </sup></div>
                   </label>
                   <label>
                     <input type="checkbox">
@@ -105,18 +193,144 @@
                     <span></span>
                     <div>Гостевой доступ</div>
                   </label>
-                </form>
+                  <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>История изменений</div>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>Комментарии</div>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>Режим рисования</div>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>Совместная работа</div>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>Шаблоны</div>
+                  </label>
+                  <label class="has-tooltip">
+                    <input type="checkbox">
+                    <span></span>
+                    <div>Экспорт в PNG/PPT/SVG
+                      <sup>
+                        ?
+                        <span>Выгрузка полученных данных в формате PNG для дальнейшей обработки</span>
+                      </sup>
+                    </div>
+                  </label>
+
+
+                  <div class="accordion-container"> 
+                    <div class="accordion-item">
+                      <div class="accordion-header active-header">Платформы</div>
+                      <div class="accordion-content">
+                       <label>
+                        <input type="checkbox">
+                        <span></span>
+                        <div>iOS</div>
+                      </label>
+                      <label>
+                        <input type="checkbox">
+                        <span></span>
+                        <div>Android</div>
+                      </label>
+                      <label>
+                        <input type="checkbox">
+                        <span></span>
+                        <div>Веб-приложение</div>
+                      </label>
+                      <label>
+                        <input type="checkbox">
+                        <span></span>
+                        <div>Десктопный софт</div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <div class="accordion-header">Модель оплаты</div>
+                    <div class="accordion-content">
+                     <label>
+                      <input type="checkbox">
+                      <span></span>
+                      <div>iOS</div>
+                    </label>
+                    <label>
+                      <input type="checkbox">
+                      <span></span>
+                      <div>Android</div>
+                    </label>     
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header">Язык интерфейса</div>
+                  <div class="accordion-content">
+                   <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>iOS</div>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>Android</div>
+                  </label>     
+                </div>
               </div>
+              <div class="accordion-item">
+                <div class="accordion-header">Установка</div>
+                <div class="accordion-content">
+                 <label>
+                  <input type="checkbox">
+                  <span></span>
+                  <div>iOS</div>
+                </label>
+                <label>
+                  <input type="checkbox">
+                  <span></span>
+                  <div>Android</div>
+                </label>     
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">Страна разработки</div>
+              <div class="accordion-content">
+               <label>
+                <input type="checkbox">
+                <span></span>
+                <div>iOS</div>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span></span>
+                <div>Android</div>
+              </label>     
             </div>
           </div>
         </div>
-      </div>
-    </main>
-    @@include('var/_footer.html')
+      </form>
+    </div>
   </div>
-  <!--wrapper-->
+</div>
+</div>
+</div>
+</div>
+</main>
+@@include('var/_footer.html')
+</div>
+<!--wrapper-->
 
-  @@include('var/_scripts.html')
+@@include('var/_scripts.html')
 </body>
 
 </html>
