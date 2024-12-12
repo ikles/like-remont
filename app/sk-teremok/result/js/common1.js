@@ -138,6 +138,9 @@ for (var key in lcs) {
 
 
 
+    $('.gap').val('');
+    var css_gap = $('#active').css('gap');
+    $('.gap').attr('placeholder', css_gap);
 
     $('.margin_top').val('');
     var css_margin_top = $('#active').css('margin-top');
@@ -330,6 +333,8 @@ for (var key in lcs) {
       $('.iflex').prop('checked', true);
     }
 
+    $('.mla').prop('checked', false);
+    $('.mra').prop('checked', false);
     $('.ma').prop('checked', false);
     $('.mha').prop('checked', false);
     if ($('#active').css('min-height') == 'auto') {
@@ -377,7 +382,7 @@ for (var key in lcs) {
     }
 
     $('.ricentr').prop('checked', false);
-    if ($('#active').css('background-position') == 'right center') {
+    if ($('#active').css('background-position') == 'right 0px center') {
       $('.ricentr').prop('checked', true);
     }
 
@@ -540,6 +545,31 @@ $('.form-my2').append('<span style="cursor: pointer; position: absolute; left: 1
       );
     main_function();
   });
+
+
+  $('#hdr').click(function () {
+    $('#active').append(
+      '<header class="header"></header>',
+      );
+    main_function();
+  });
+
+  $('#footer').click(function () {
+    $('#active').append(
+      '<footer class="footer"></footer>',
+      );
+    main_function();
+  });
+
+  $('#main').click(function () {
+    $('#active').append(
+      '<main class="main"></main>',
+      );
+    main_function();
+  });
+  
+  
+
 
   $('body').keydown(function (e) {
     if (e.altKey && e.keyCode == 51) {
@@ -866,6 +896,10 @@ $('.form-my2').append('<span style="cursor: pointer; position: absolute; left: 1
         var css_padmargs = $('#active').css('margin-left');
         $('.padmargs').attr('placeholder', css_padmargs);
 
+        $('.gap').val('');
+        var css_gap = $('#active').css('gap');
+        $('.gap').attr('placeholder', css_gap);
+
         $('.margin_top').val('');
         var css_margin_top = $('#active').css('margin-top');
         $('.margin_top').attr('placeholder', css_margin_top);
@@ -1057,6 +1091,8 @@ $('.form-my2').append('<span style="cursor: pointer; position: absolute; left: 1
           $('.iflex').prop('checked', true);
         }
 
+        $('.mla').prop('checked', false);
+        $('.mra').prop('checked', false);
         $('.ma').prop('checked', false);
         $('.mha').prop('checked', false);
         if ($('#active').css('min-height') == 'auto') {
@@ -1104,7 +1140,7 @@ $('.form-my2').append('<span style="cursor: pointer; position: absolute; left: 1
         }
 
         $('.ricentr').prop('checked', false);
-        if ($('#active').css('background-position') == 'right center') {
+        if ($('#active').css('background-position') == 'right 0px center') {
           $('.ricentr').prop('checked', true);
         }
 
@@ -1214,6 +1250,11 @@ $('.text_val2').val('');
     $('#active').css('margin-bottom', $('.margin_bottom').val() + 'px');
   });
 
+  
+  $('.gap').bind('textchange', function () {
+    $('#active').css('gap', $('.gap').val() + 'px');
+  });
+
   $('.margin_top').bind('textchange', function () {
     $('#active').css('margin-top', $('.margin_top').val() + 'px');
   });
@@ -1307,6 +1348,14 @@ $('.text_val2').val('');
     $('#active').css('margin', 'auto');
   });
 
+  $('.mla').click(function () {
+    $('#active').css('margin-left', 'auto');
+  });
+
+  $('.mra').click(function () {
+    $('#active').css('margin-right', 'auto');
+  });
+
   $('.mha').click(function () {
     $('#active').css('min-height', 'auto');
   });
@@ -1364,7 +1413,7 @@ $('.text_val2').val('');
   });
 
   $('.ricentr').click(function () {
-    $('#active').css('background-position', 'right center');
+    $('#active').css('background-position', 'right 0px center');
   });
 
   $('.ribot').click(function () {
@@ -1667,7 +1716,7 @@ $('.save').click(function () {
     $('#active').append(
       `<div class="__item" style="padding: 30px;"><div class="" style="margin-bottom: 25px; display: flex; justify-content: space-between; align-items: center;"><div class="" style=" display: flex; align-items: center"><div class="" style="display: flex; align-items: flex-start; justify-content: flex-start; width: 30px; height: 30px; margin-right: 7px; flex: 0 0 auto;"><img src="img/profit-1.svg"></div><div class="" style="">4.5/5</div><span class="" style="display: inline-block; margin-left: 5px;">(14)</span></div><div class="">
       <label class="" style="margin-right: 10px;"><span class="label-span">1</span></label><label class="" style="margin-right: 10px;"><span class="label-span">2</span></label></div></div><a class="" style="display: block; margin-bottom: 20px;">Автокран 30 тонн Liebherr LTM 1030</a><a class="__img-w" style="width: 100%; height: 250px; display: block; margin-bottom: 30px;"><img src="img/prod-5.jpg" class="" style="object-fit: cover; width: 100%; height: 100%;"></a><div class="" style="font-size: 15px; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center;"><div class="" style=" display: flex; align-items: center"><div class="" style="display: flex; align-items: flex-start; justify-content: flex-start; width: 12px; height: 12px; margin-right: 15px; flex: 0 0 auto; background: rgb(82, 209, 22); border-radius: 50%; overflow: hidden;"></div><div class="" style="">Есть в наличии</div></div><div class="" style="display: inline-block;">Гарантия 1 год</div></div><div class="" style="display: flex; justify-content: space-between;"><div class="" style="text-decoration-line: line-through;
-">137 900 ₽</div><div class="">137 900 ₽</div></div><a class="btn" style="width: 100%; height: 48px; left: 1105px; top: 24px; background: rgb(82, 209, 22); border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; padding-left: 34px; padding-right: 31px; margin-top: 25px;"><img src="img/callback.svg" class="btn-icon" style="margin-right: 10px; flex: 0 0 auto;"><span class="">в корзину</span></a><div class="" style="margin-top: 15px; display: flex; align-items: center; justify-content: space-between;"><a class="">Хочу дешевле</a><a class="">Купить в 1 клик</a></div></div>`,
+      ">137 900 ₽</div><div class="">137 900 ₽</div></div><a class="btn" style="width: 100%; height: 48px; left: 1105px; top: 24px; background: rgb(82, 209, 22); border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; padding-left: 34px; padding-right: 31px; margin-top: 25px;"><img src="img/callback.svg" class="btn-icon" style="margin-right: 10px; flex: 0 0 auto;"><span class="">в корзину</span></a><div class="" style="margin-top: 15px; display: flex; align-items: center; justify-content: space-between;"><a class="">Хочу дешевле</a><a class="">Купить в 1 клик</a></div></div>`,
       );
     main_function();
   });
@@ -2160,6 +2209,13 @@ $('.styless').keydown(function(e) {
       if ($('#active').css('font-weight') == '400') {
         $('#active').css('font-weight', '');
       }
+      if ($('#active').css('font-family')) {
+        $('#active').css('font-family', '');
+      }
+      if ($('#active').css('font-feature-settings')) {
+        $('#active').css('font-feature-settings', '');
+      }
+      
     }
   });
 
@@ -2206,7 +2262,7 @@ $('.styless').keydown(function(e) {
     $('#active')
     .css('background-image', 'url(img/' + img_bg + ')')
     .css('background-repeat', 'no-repeat')
-    .css('background-position', 'left top');
+    .css('background-position', 'left center');
     main_function();
   });
 

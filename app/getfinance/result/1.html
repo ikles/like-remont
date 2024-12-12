@@ -7,14 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;700;900&display=swap"
   rel="stylesheet">
-  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/select2.min.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/select2.min.css">  
   <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,35 +21,52 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-
 <body>
-
   <div class="wrapper">
-    <div class="header">
+        <div class="header">
       <div class="contain">
-        <div class="header__row"><a href="" class="logo"><img src="img/logo.svg">
-          <div class="logo__slogan">
-            <div class="logo__txt-1">GetFinance</div>
-            <div class="logo__txt-2">Консалтинговая компания</div>
+        <div class="header__row">
+          <a href="index.html" class="logo"><img src="img/logo.svg">
+            <div class="logo__slogan">
+              <div class="logo__txt-1">GetFinance</div>
+              <div class="logo__txt-2">Консалтинговая компания</div>
+            </div>
+          </a>
+          <div class="header__content">
+            <div class="close2"></div>
+            <div class="menu-lbl">Меню</div>
+            <ul class="header__ul">
+              <li><a href="" class="active" href="">Главная</a></li>
+              <li><a href="#for">Для кого</a></li>
+              <li><a href="#help">Услуги</a></li>
+              <li><a href="#trust">О нас</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <div class="header__conts">
+              <div class="header__conts-img">
+                <a href="https://api.whatsapp.com/send/?phone=79890450003">
+                  <img src="img/phone.svg">
+                </a>
+              </div>
+              <div class="header__conts-content">
+                <a href="tel:8 (989) 045-00-03" class="header__tel">8 (989) 045-00-03</a>                
+                <a href="https://api.whatsapp.com/send/?phone=79890450003" class="contst-wa"><span>Написать в
+                WhatsApp</span></a>
+                <div class="contst-lbl">E-mail</div>
+                <a href="mailto:consult@getfinans.ru" class="header__mail">consult@getfinans.ru</a></div>
+                <div class="contst-adr">
+                  <div class="contst-lbl">E-mail</div>
+                  <p>Москва, 4-й лесной переулок, д. 4, БЦ «White Stone», оф. 515</p>
+                </div>
+                <img class="logomark" src="img/logomark2.png" alt="">
+              </div>
+            </div>
+            <a href="tel:8 (989) 045-00-03" class="phone-3"></a>
+            <div class="burger"></div>
+            <a href="" class="header__btn">Заказать обратный звонок</a>
           </div>
-        </a>
-        <ul class="header__ul">
-          <li><a href="" class="active" href="">Главная</a></li>
-          <li><a href="">Для кого</a></li>
-          <li><a href="">Услуги</a></li>
-          <li><a href="">О нас</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-        <div class="header__conts">
-          <div class="header__conts-img"><img src="img/phone.svg"></div>
-          <div class="header__conts-content">
-            <a href="tel:8 (989) 045-00-03" class="header__tel">8 (989) 045-00-03</a>
-            <a href="mailto:consult@getfinans.ru" class="header__mail">consult@getfinans.ru</a></div>
-          </div>
-          <a href="" class="header__btn">Заказать обратный звонок</a>
         </div>
       </div>
-    </div>
     <main class="main">
       <div class="hero">
         <div class="contain">
@@ -65,12 +80,12 @@
                     <div class="hadvant__title">до 100 млн. ₽</div>
                   </div>
                   <div class="hadvant__col">
-                    <div class="hadvant__subtitle">Предварительное решение</div>
-                    <div class="hadvant__title"><span class="_red">за 1 рабочий день</span></div>
+                    <div class="hadvant__subtitle"><span>Предварительное</span> <div>решение</div></div>
+                    <div class="hadvant__title _red">за 1 <span>рабочий</span> день</div>
                   </div>
                   <div class="hadvant__col">
                     <div class="hadvant__subtitle">Мы сотрудничаем</div>
-                    <div class="hadvant__title"><span class="_red">с 7 банками</span></div>
+                    <div class="hadvant__title _red">с 7 банками</div>
                   </div>
                   <div class="hadvant__col">
                     <div class="hadvant__subtitle">Одобрение</div>
@@ -79,7 +94,7 @@
                 </div>
                 <div class="hero__bot">
                   <a href="" class="hero__btn">Подобрать кредит</a>
-                  <div class="hero__info">Или приходите в офис:
+                  <div class="hero__info"><b>Или приходите в офис:</b> <br>
                   Москва, 4-й лесной переулок, д. 4, БЦ «White Stone», оф. 515</div>
                 </div>
               </div>
@@ -87,16 +102,17 @@
             </div>
           </div>
         </div>
-        <section class="for">
+        <section class="for" id="for">
           <div class="contain">
             <div class="for__row">
               <div class="for__col">
                 <div class="for__title">Мы сможем <br> помочь <span class="_blue">в короткие сроки</span></div>
+                <div class="arrow"></div>
               </div>
               <div class="for__col">
                 <div class="for__it">
                   <div class="for__img-w"><img src="img/for-1.svg" class="for__img"></div>
-                  <a class="for__tit">Предпринимателям</a>
+                  <div class="for__tit">Предпринимателям</div>
                   <div class="for__text">Пополнение оборотных средств, покупка оборудования, на выплату налогов и
                   заработной платы и пр.</div>
                 </div>
@@ -104,9 +120,8 @@
               <div class="for__col">
                 <div class="for__it">
                   <div class="for__img-w"><img src="img/for-3.svg" class="for__img"></div>
-                  <a href="" class="for__tit"><span
-                    class="_red">Частным лицам</span>
-                  </a>
+                  <div class="for__tit"><span class="_red">Частным лицам</span>
+                  </div>
                   <div class="for__text">Для покупки квартиры/машины/телевизора, для исполнения мечты или оплаты обучения
                   и т.д.</div>
                 </div>
@@ -114,68 +129,186 @@
             </div>
           </div>
         </section>
-        <section class="help">            
+        <section class="help" id="help">
           <div class="contain">
             <div class="help__row">
               <div class="help__col">
                 <div class="help__title">Как мы вам <span class="_red">поможем</span>?</div>
-                <div class="help__text">Деньги под любой запрос: пополнение оборотных средств, открытие нового бизнеса, покупка оборудования, недвижимости и лизинг.</div>
+                <div class="help__text">Деньги под любой запрос: пополнение оборотных средств, открытие нового бизнеса,
+                покупка оборудования, недвижимости и лизинг.</div>
+                <div class="arrow"></div>
               </div>
               <div class="help__col">
-                <a href="" class="help__it">
+                <a href="#form" class="help__it">
                   <div class="help__tit">Кредит для бизнеса</div>
-                  <div class="help__desc">На любые цели: на недвижимость, транспорт, модернизацию производства или пополнение оборотных средств.</div>
-                  <span class="help__btn">Оформить</span><img src="img/help-1.svg" class="help__img" />
+                  <img src="img/help-1.svg" class="help__img" />
+                  <div class="help__desc">На любые цели: на недвижимость, транспорт, модернизацию производства или
+                  пополнение оборотных средств.</div>
+                  <span class="help__btn">Оформить</span>
                 </a>
               </div>
               <div class="help__col">
-                <a href="" class="help__it">
+                <a href="#form" class="help__it">
                   <div class="help__tit">Лизинг</div>
-                  <div class="help__desc">На любые цели: на недвижимость, транспорт, модернизацию производства или пополнение оборотных средств.</div>
-                  <span class="help__btn">Оформить</span><img src="img/help-2.svg" class="help__img" />
+                  <img src="img/help-2.svg" class="help__img" />
+                  <div class="help__desc">Лизинг автотранспорта, спецтехники, оборудования и недвижимости. Возвратный лизинг.</div>
+                  <span class="help__btn">Оформить</span>
                 </a>
               </div>
               <div class="help__col">
-                <a href="" class="help__it">
+                <a href="#form" class="help__it">
                   <div class="help__tit">Потребительский кредит</div>
+                  <img src="img/help-3.svg" class="help__img" />
                   <div class="help__desc">Потребительский кредит наличными для физических лиц на любые цели.</div>
-                  <span class="help__btn">Оформить</span><img src="img/help-3.svg" class="help__img" />
+                  <span class="help__btn">Оформить</span>
                 </a>
               </div>
             </div>
           </div>
         </section>
-        <section class="trust">          
+        <section class="trust" id="trust">
           <div class="contain">
             <div class="trust__title">Почему нам можно <span class="_blue">доверять</span>?</div>
             <div class="trust__row">
               <div class="trust__col">
-                <div class="trust__num"><div>0<i></i></div><span>%<i></i></span></div>
+                <div class="trust__num">
+                  <div>0<i></i></div><span>%<i></i></span>
+                </div>
                 <div class="trust__name"><strong>Предоплаты</strong></div>
-                <div class="trust__text">Это означает, что нашу комиссию вы оплачиваете только после получения кредита. Консультация и помощь в оформлении документов предоставляется бесплатно.</div>
+                <div class="trust__text">Это означает, что нашу комиссию вы оплачиваете только после получения кредита.
+                Консультация и помощь в оформлении документов предоставляется бесплатно.</div>
               </div>
               <div class="trust__col">
-                <div class="trust__num _red"><div>7<i></i></div></div>
-                <div class="trust__name _red"><strong>Крупнейших банков</strong> России в партнёрах</div>
-                <div class="trust__text">Так как мы знаем все внутренние требования и оправляем запрос только нашим менеджерам в банки после детального анализа документов и грамотно составленной кредитной заявки</div>
+                <div class="trust__num _red">
+                  <div>7<i></i></div>
+                </div>
+                <div class="trust__name _red"><strong>Крупнейших банков</strong> <br> России в партнёрах</div>
+                <div class="trust__text">Так как мы знаем все внутренние требования и оправляем запрос только нашим
+                менеджерам в банки после детального анализа документов и грамотно составленной кредитной заявки</div>
               </div>
               <div class="trust__col">
-                <div class="trust__num"><div>99<i></i></div><span>%<i></i></span></div>
-                <div class="trust__name">Наших клиентов получают <strong>одобрение</strong></div>
-                <div class="trust__text">У нас работают высокопрофессиональные сотрудники с большим опытом работы в сфере банковского кредитования.</div>
+                <div class="trust__num">
+                  <div>99<i></i></div><span>%<i></i></span>
+                </div>
+                <div class="trust__name">Наших клиентов <br> получают <strong>одобрение</strong></div>
+                <div class="trust__text">У нас работают высокопрофессиональные сотрудники с большим опытом работы в сфере
+                банковского кредитования.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="form" id="form">
+          <div class="contain">
+            <div class="form__row">
+              <div class="form__l">
+                <div class="form__title">Получите кредит сейчас на <b>самых выгодных условиях</b> <div class="none">с кредитным брокером</div>
+                <b>GETFINANCE</b></div>
+                <div class="form__text">Для этого <b>заполните форму</b> и мы свяжемся с вами в течении <b>15 минут</b>
+                для расчета кредита</div>
+                <div class="arrow-1"></div>
+              </div>
+              <form class="form__form">
+                <input class="form__input" type="text" placeholder="Ваше имя" />
+                <input class="form__input-2 phone" type="text" placeholder="+7 (___) ___- __-__" />
+                <div class="form__label">
+                  <span class="form__label-txt">Цель кредита</span>
+                  <select>
+                    <option value="Кредит для бизнеса">Кредит для бизнеса</option>
+                    <option value="Потребительский кредит">Потребительский кредит</option>
+                    <option value="Лизинг">Лизинг</option>
+                  </select>
+                </div>
+                <input class="form__input" type="text" placeholder="Необходимая сумма" />
+                <label class="form__label-ch">
+                  <input type="checkbox" checked>
+                  <span></span>
+                  <div>Принимаю <a href="">условия обработки персональных данных</a></div>
+                </label>
+
+                <button class="form__btn btn">Отправить</button>
+              </form>                  
+            </div>
+          </div>
+        </section>
+        <section class="contacts" id="contacts">
+          <div class="contain">
+            <div class="contacts__row">
+              <div class="contacts__inn">
+                <div class="contacts__title">Или звоните/пишите</div>
+                <a href="tel:8 (989) 045-00-03" class="contacts__phohe">8 (989) 045-00-03</a>
+                <a href="https://api.whatsapp.com/send/?phone=79890450003" class="contacts__whatsap"><span>Написать в
+                WhatsApp</span></a>
               </div>
             </div>
           </div>
         </section>
       </main>
+              <footer class="footer">
+          <div class="contain">
+            <div class="footer__row">
+              <div class="footer__col-1">
+                <a href="index.html" class="footer__logo logo"><img src="img/logo.svg">
+                  <div class="logo__slogan">
+                    <div class="logo__txt-1">GetFinance</div>
+                    <div class="logo__txt-2">Консалтинговая компания</div>
+                  </div>
+                </a>
+              </div>
+              <div class="footer__col-2">
+                <div class="footer__item">
+                  <div class="footer__lbl">E-mail</div>
+                  <a href="" class="footer__mail">сonsult@getfinans.ru</a>
+                </div>
+                <div class="footer__item">
+                  <div class="footer__lbl">Адрес</div>
+                  <div class="footer__adress">Москва, 4-й лесной переулок, д. 4, <br> БЦ «White Stone», оф. 515</div>
+                </div>
+              </div>
+              <div class="footer__col-3">
+                <ul class="footer__ul">
+                  <li><a href="#for">Для кого</a></li>
+                  <li><a href="#help">Услуги</a></li>
+                  <li><a href="#trust">О нас</a></li>
+                  <li><a href="#contacts">Контакты</a></li>                  
+                </ul>
+              </div>
+              <div class="footer__col-4">
+                <div class="copy">© 2023 GETFINANCE</div>
+              </div>
+              <div class="footer__col-5">
+                <a href="2.html" class="polyt">Политика конфиденциальности</a>
+              </div>
+            </div>
+          </div>            
+        </footer>
+      </div>
+      <!--wrapper-->
+      <div class="modal-overlay modal-overlay_1">
+        <div class="modal-form__layout"></div>
+        <div class="modal-form__block">
+          <span class="modal-close modal-close_1"></span>
+          <div class="modal-form__inner">              
+            <div class="modal-form__title"><span>Форма</span> обратной связи</div>
+            <div class="modal-form__text"><span>Заполните форму</span> и мы свяжемся с вами в
+              течении <span>15 минут</span> для расчета кредита</div>
+              <form>
+                <input class="form__input" type="text" placeholder="Ваше имя" />
+                <input class="form__input-2 phone" type="text" placeholder="+7 (___) ___- __-__" />
+                <label class="form__label-ch">
+                  <input type="checkbox" checked>
+                  <span></span>
+                  <div>Принимаю <a href="">условия обработки персональных данных</a></div>
+                </label>
 
-    </div>
-    <!--wrapper-->
-
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/select2.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/common.js"></script>
-  </body>
-
-  </html>
+                <button class="form__btn btn">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--modal-overlay-->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/select2.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/common.js"></script>
+    </body>
+    </html>

@@ -45,11 +45,17 @@
   width: 100%;
 }
 
+@media only screen and (max-width : 1500px) {
+  .contain {
+    max-width: 1300px
+  }      
+}
+
 @media only screen and (max-width : 1367px) {
   .contain {
     max-width: 1170px
   }      
-}//1415
+}//
 
 @media only screen and (max-width : 1199px) {
   .contain {
@@ -83,23 +89,23 @@
   .contain {
     width: 100%;
     max-width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }//575
 
 
 
 @media only screen and (max-width : 480px) {
-  
+
 }//480
 
 @media only screen and (max-width : 375px) {
-  
+
 }//375
 
 @media only screen and (max-width : 360px) {
-  
+
 }//360
 
 @media only screen and (max-width : 320px) {
