@@ -7,11 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Dvoyki.net - ЛК РЕФ: Список добавленных вопросов</title>
 	<meta name="description" content="">
-
-
-
-
-
 	@@include('var/_styless.html')
 </head>
 
@@ -23,9 +18,12 @@
 
 		<div class="content-wrapper">
 			<div class="container">
-				<h1 class="page-header">
+				<!-- <h1 class="page-header">
 					Реферальная программа
-				</h1>
+				</h1> -->
+				@@include('var/_faculty-form-wrap.html',{
+				  "clas":""				  
+				})
 				<!-- /.page-header -->
 				<div class="lk">
 					<div class="row">
@@ -34,7 +32,6 @@
 								<ul>
 									<li><a class="active" href="#">Профиль</a></li>
 									<li><a href="#">История покупок</a></li>
-
 									<li><a href="#">Реферальная программа</a></li>
 								</ul>
 							</div>
@@ -58,7 +55,7 @@
 
 
 
-										<tr>
+										<tr class="tr-open">
 											<td>28.04 2024</td>
 											<td>Представительный орган городского округа (городская дума)…</td>
 											<td><span class="table-btn table-btn--red">На рассмотрении</span></td>
@@ -67,25 +64,25 @@
 
 
 
-										<tr>
+										<tr class="tr-hidden">
 											<td colspan="3">На данный момент вопрос находится на проверке у администрации сайта. По результатам проверки, статус вашего вопроса изменится.</td>
 										</tr>
 
 
 
 
-										<tr class="tr--gray">
+										<tr class="tr--gray tr-open">
 											<td>28.04 2024</td>
 											<td>Принудительные госпитализация и лечение в отношении лиц...</td>
 											<td><span class="table-btn table-btn--warn">Отклонен</span></td>
 										</tr>
 
-										<tr class="tr--gray">
+										<tr class="tr--gray tr-hidden">
 											<td colspan="3">Комментарий: данный вопрос уже имеется на сайте.</td>
 										</tr>
 
 
-										<tr>
+										<tr class="tr-open">
 											<td>28.04 2024</td>
 											<td>
 												<a href="">В соответствии с Гл. 25 Кодекса РФ об административных прав…</a>
@@ -93,7 +90,7 @@
 											<td><span class="table-btn table-btn--green">Размещен</span></td>
 										</tr>
 
-										<tr>
+										<tr class="tr-hidden">
 											<td colspan="3">
 												Продан за день: 0 раз<br>
 												Продан за месяц: 6 раз<br>

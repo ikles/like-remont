@@ -13,11 +13,11 @@ var gulp       = require('gulp'), // Подключаем Gulp
 	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
 gulp.task('sass', function(){ // Создаем таск Sass
-	return gulp.src('app/dvoyki-net/scss/**/*.scss') // Берем источник
+	return gulp.src('app/bavura/scss/**/*.scss') // Берем источник
 		.pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
 		.pipe(autoprefixer(['last 5 versions'], { cascade: true })) // Создаем префиксы
 		//.pipe(cleanCSS({removeDuplicateRules: 'true'})) //удаляем дубликаты и минификация тоже тут. Если закомментить, то минификации не будет
-		.pipe(gulp.dest('app/dvoyki-net/result/css')) // Выгружаем результата в папку app/dvoyki-net/css
+		.pipe(gulp.dest('app/bavura/result/css')) // Выгружаем результата в папку app/bavura/css
 		.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 	});
 
@@ -33,7 +33,7 @@ gulp.task('sass', function(){ // Создаем таск Sass
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
 	browserSync({ // Выполняем browserSync
 		server: { // Определяем параметры сервера
-			baseDir: 'app/dvoyki-net/result' // Директория для сервера - app
+			baseDir: 'app/bavura/result' // Директория для сервера - app
 		},
 		notify: false // Отключаем уведомления
 	});
@@ -43,37 +43,37 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 var fileinclude = require('gulp-file-include');
 
 gulp.task('fileinclude', function() {
-	gulp.src(['app/dvoyki-net/*.html'])
+	gulp.src(['app/bavura/*.html'])
 	.pipe(fileinclude({
 		prefix: '@@',
 		basepath: '@file'
 	}))
-	.pipe(gulp.dest('app/dvoyki-net/result'));
+	.pipe(gulp.dest('app/bavura/result'));
 });
 
 /*gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
-		'app/dvoyki-net/libs/jquery/dist/jquery.min.js', // Берем jQuery
-		'app/dvoyki-net/libs/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
+		'app/bavura/libs/jquery/dist/jquery.min.js', // Берем jQuery
+		'app/bavura/libs/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл
-		.pipe(gulp.dest('app/dvoyki-net/js')); // Выгружаем в папку app/dvoyki-net/js
+		.pipe(gulp.dest('app/bavura/js')); // Выгружаем в папку app/bavura/js
 	});*/
 
 /*gulp.task('css-libs', ['sass'], function() {
-	return gulp.src('app/dvoyki-net/css/libs.css') // Выбираем файл для минификации
+	return gulp.src('app/bavura/css/libs.css') // Выбираем файл для минификации
 		.pipe(cssnano()) // Сжимаем
 		.pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
-		.pipe(gulp.dest('app/dvoyki-net/css')); // Выгружаем в папку app/dvoyki-net/css
+		.pipe(gulp.dest('app/bavura/css')); // Выгружаем в папку app/bavura/css
 	});*/
 
 gulp.task('watch', ['browser-sync', 'fileinclude'], function() {
-	gulp.watch('app/dvoyki-net/scss/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
-	gulp.watch('app/dvoyki-net/*.html', ['fileinclude'], browserSync.reload); // Наблюдение за HTML файлами в корне проекта
-	gulp.watch('app/dvoyki-net/var/*.html', ['fileinclude'], browserSync.reload); // Наблюдение за HTML файлами var
-	gulp.watch('app/dvoyki-net/result/*.html', browserSync.reload); // Наблюдение за HTML файлами в result
-	gulp.watch('app/dvoyki-net/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
+	gulp.watch('app/bavura/scss/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
+	gulp.watch('app/bavura/*.html', ['fileinclude'], browserSync.reload); // Наблюдение за HTML файлами в корне проекта
+	gulp.watch('app/bavura/var/*.html', ['fileinclude'], browserSync.reload); // Наблюдение за HTML файлами var
+	gulp.watch('app/bavura/result/*.html', browserSync.reload); // Наблюдение за HTML файлами в result
+	gulp.watch('app/bavura/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
 });
 
 gulp.task('clean', function() {
@@ -81,31 +81,31 @@ gulp.task('clean', function() {
 });
 
 gulp.task('img', function() {
-	return gulp.src('app/dvoyki-net/result/img/**/*') // Берем все изображения из app
+	return gulp.src('app/bavura/result/img/**/*') // Берем все изображения из app
 		.pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
 			interlaced: true,
 			progressive: true,
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
 		})))
-		.pipe(gulp.dest('app/dvoyki-net/result/img')); // Выгружаем на продакшен
+		.pipe(gulp.dest('app/bavura/result/img')); // Выгружаем на продакшен
 	});
 
 gulp.task('build', ['clean', 'img', 'sass', 'fileinclude'], function() {
 
 /*	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
-		'app/dvoyki-net/css/main.css',
-		'app/dvoyki-net/css/libs.min.css'
+		'app/bavura/css/main.css',
+		'app/bavura/css/libs.min.css'
 		])
 	.pipe(gulp.dest('dist/css'))*/
 
-	var buildFonts = gulp.src('app/dvoyki-net/fonts/**/*') // Переносим шрифты в продакшен
+	var buildFonts = gulp.src('app/bavura/fonts/**/*') // Переносим шрифты в продакшен
 	.pipe(gulp.dest('dist/fonts'))
 
-	var buildJs = gulp.src('app/dvoyki-net/js/**/*') // Переносим скрипты в продакшен
+	var buildJs = gulp.src('app/bavura/js/**/*') // Переносим скрипты в продакшен
 	.pipe(gulp.dest('dist/js'))
 
-	/*var buildHtml = gulp.src('app/dvoyki-net/*.html')
+	/*var buildHtml = gulp.src('app/bavura/*.html')
 	.pipe(gulp.dest('dist'));*/
 	 // Переносим HTML в продакшен
 
