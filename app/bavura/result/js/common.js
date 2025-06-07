@@ -43,7 +43,7 @@ jQuery(document).ready(function( $ ) {
 
 
 
-  $('.houses__sl-big').slick({
+/*  $('.houses__sl-big').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
@@ -60,8 +60,61 @@ jQuery(document).ready(function( $ ) {
     arrows: false,
     centerMode: false,
     focusOnSelect: true,
+  });*/
+
+  $('.houses__sl-min').each(function() {
+    const childCount = $(this).children().length;
+    $(this).addClass('_child_' + childCount);
   });
 
+
+
+  $('.houses__item').each(function () {
+    const $slider = $(this);
+    const $bigImg = $slider.find('.houses__sl-big img');
+    const $minImages = $slider.find('.houses__sl-min img');
+    const $prevBtn = $slider.find('.slider-prev');
+    const $nextBtn = $slider.find('.slider-next');
+
+    let currentIndex = 0;
+
+  // Инициализация: первая миниатюра активна
+    $minImages.eq(currentIndex).addClass('active');
+
+  // Клик по миниатюре
+    $minImages.click(function() {
+      const $clickedImg = $(this);
+      currentIndex = $clickedImg.index();
+      updateBigImage();
+      updateActiveThumb();
+    });
+
+  // Клик по стрелке "Вперед"
+    $nextBtn.click(function() {
+      currentIndex = (currentIndex + 1) % $minImages.length;
+      updateBigImage();
+      updateActiveThumb();
+    });
+
+  // Клик по стрелке "Назад"
+    $prevBtn.click(function() {
+      currentIndex = (currentIndex - 1 + $minImages.length) % $minImages.length;
+      updateBigImage();
+      updateActiveThumb();
+    });
+
+  // Обновление большой картинки
+    function updateBigImage() {
+      const newSrc = $minImages.eq(currentIndex).attr('src');
+      $bigImg.attr('src', newSrc);
+    }
+
+  // Обновление активной миниатюры
+    function updateActiveThumb() {
+      $minImages.removeClass('active');
+      $minImages.eq(currentIndex).addClass('active');
+    }
+  });
 
 
 /************************************/
@@ -136,6 +189,25 @@ jQuery(document).ready(function( $ ) {
   }
 
 
+
+  $('.accordion-header').toggleClass('inactive-header');
+  $('.accordion-header').first().toggleClass('active-header').toggleClass('inactive-header');
+  $('.accordion-content').first().slideDown().toggleClass('open-content');
+  $('.accordioon-content').first().slideDown().toggleClass('open-content');
+  $('.accordion-header').click(function () {
+    if($(this).is('.inactive-header')) {
+      $('.active-header').toggleClass('active-header').toggleClass('inactive-header').next().slideToggle().toggleClass('open-content');
+      $(this).toggleClass('active-header').toggleClass('inactive-header');
+      $(this).next().slideToggle().toggleClass('open-content');
+    }
+
+    else {
+      $(this).toggleClass('active-header').toggleClass('inactive-header');
+      $(this).next().slideToggle().toggleClass('open-content');
+    }
+  });
+
+  return false;
 
 }); //ready
 
