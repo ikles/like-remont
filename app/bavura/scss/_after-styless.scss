@@ -295,6 +295,114 @@
   .top-projects__item {
     width: 100%;
   }
+  .our-client__item {
+    padding: 45px 20px;
+  }
+  .our-client__item .h2 {
+    font-size: 24px;
+    margin-bottom: 34px;
+  }
+  .our-client__item p {
+    font-size: 15px;
+  }
+  .houses__row {    
+    flex-direction: column;
+  }
+  .houses__r {
+    .tbtn--lg-o {
+      margin-top: 36px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .houses__r,
+  .houses__sl-wrap {
+    width: 100%;
+  }
+  .houses__sl-big {
+    margin-bottom: 6px;
+  }
+  .houses__sl-min {
+    gap: 10px;
+  }
+  .calc__row {
+    display: flex;    
+    flex-direction: column;
+    gap: 45px;
+  }
+  .calc__item:before {
+    display: none;
+  }
+  .why-build__item.why-build__item--w100,
+  .why-build__item {
+    width: 100%;
+    aspect-ratio: unset;
+  }
+  .why-build__item.why-build__item--w100 .why-build__img,
+  .why-build__img {
+    aspect-ratio: 1.534 / 1;  
+    height: auto;  
+  }
+  .h2 {
+    font-size: 29px;
+    margin-bottom: 25px;
+  }
+  .h3 {
+    font-size: 25px;
+  }
+  .cost__accordion-container .accordion-header {
+    font-size: 20px;
+  }
+  .cost__accordion-container .accordion-content, .cost__numb-item p {
+    font-size: 17px;
+  }
+  .cost__accordion-container .accordion-header:after {
+    width: 20px;
+    height: 20px;
+  }
+  .calc-est {    
+    flex-direction: column;
+    .tbtn--lg-o {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .bav__h-w a {
+    max-width: 355px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .geo__map {
+    margin-top: 0;
+  }
+  .design__row {
+    display: flex;    
+    flex-direction: column;
+  }
+  .comp__w {    
+    align-items: center;
+  }
+  .wcomp__item {
+    text-align: center;
+  }
+  .err-cust__item span {
+    font-size: 18px;
+  }
+  .rd-proj__bg {
+    padding: 35px 35px 66px 35px;
+  }
+  .section {
+    padding: 20px 0;
+    &:first-child {
+      padding-top: 40px;
+    }
+  }
+  
 }//767 (min-width: 576px)
 
 
@@ -304,7 +412,338 @@
     padding-right: 15px;
     padding-left: 15px;
   }
-}//
+
+  .h2 {
+    font-size: 22px;
+    margin-bottom: 42px;
+  }
+  .top-projects {
+    .h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+  .top-projects__row {
+    margin-top: 30px;
+  }
+  .top-projects__img {
+
+  }
+  .top-projects__content {
+    padding: 20px 12px 12px 12px;
+  }
+  .top-projects__title {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .top-projects__desc {
+    font-size: 10px;
+  }
+  .top-projects__ul li {
+    font-size: 8px;
+    line-height: 1;
+    margin-bottom: 1px;
+  }
+  .tbtn {
+    height: 25px;
+    font-size: 10px;
+    padding: 0 15px;
+  }
+  .rd-proj .tbtn--lg, .calc__actions, .houses__more-w, .top-projects__more {
+    margin-top: 40px;
+  }
+  .working__col {
+    > img,
+    > picture {
+      margin-left: 0;
+    }
+  }
+  .working__bl {
+    text-align: center;
+    font-size: 15px;
+  }
+  .working__row {
+    gap: 40px;
+  }
+  .working__ul li {    
+    flex-direction: column;            
+    align-items: center;
+  }
+  
+  .working__ul {
+    gap: 20px;
+    li {
+      img {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 40px;
+        height: auto;
+      }
+      span {
+        text-align: center;
+        font-size: 14px;
+      }
+    } 
+  }
+  .our-client {    
+    flex-direction: column;
+  }
+  .our-client__item {
+    width: 100%;
+    padding: 62px 30px 36px 30px;
+  }
+  .our-client__item .h2 {
+    margin-bottom: 61px;
+  }
+  .our-client__item p {
+    font-size: 14.2px;
+    margin-bottom: 14px;
+  }
+  .houses__item {
+    padding: 14px 10px 26px 10px;
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .houses__sl-big .slider-prev, .houses__sl-big .slider-next {
+    width: 36px;
+    background: url(../img/slider-arr2.svg) no-repeat center;
+  }
+  .houses__row {
+    gap: 24px;
+  }
+  .houses__title {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .houses__r p {
+    font-size: 10px;
+    margin-bottom: 12px;
+  }
+  .houses__r .tbtn--lg-o {
+    margin-top: 35px;
+  }
+  .tbtn--lg,
+  .tbtn--lg-o {
+    height: 30px;
+    font-size: 10px;
+    padding: 0 23px;
+  }
+  .calc-est,
+  .calc__actions,
+  .houses__more-w {
+    .tbtn--lg-o {
+      padding: 0 35px;
+      height: 46px;
+      font-size: 18px;
+    }
+  }
+  .canal__video:before {
+    width: 43px;
+    height: 43px;
+  }
+  .canal__video {
+    aspect-ratio: 1.479 / 1;
+  }
+  .calc__item-top {
+    margin-bottom: 18px;
+    img {
+      height: 39px;
+      width: auto;    
+    }
+    span {
+      margin-left: 17px;
+      font-size: 18px;
+    }
+  } 
+  .calc__radio-group label input[type="radio"] + span {
+    font-size: 14px;
+  }
+  .calc__row {
+    gap: 43px;
+    padding: 0 20px;
+  }
+  .why-build__title {
+    font-size: 16px;
+    margin-bottom: 23px;
+  }
+  .why-build__content ul li {
+    font-size: 10px;
+  }
+  .cost__accordion-container .accordion-content, .cost__numb-item p,
+  .bav__ul li, .wknow__ul li, .kn-wood__txt, .calc-est__txt, .pride__txt, .cost__txt, .wknow__txt, .design__txt, .rd-proj p, .design__row p {
+    font-size: 14px;
+  }
+  .cost {
+    .h2 {
+      margin-bottom: 10px;
+    }
+  }
+  .cost__h2 {
+    font-size: 14px;    
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .cost__row {
+    text-align: center;
+    gap: 5px;
+  }
+  .cost__accordion-container {
+    margin-bottom: 40px;
+    .accordion-item {
+      padding: 11px 0;
+      border-width: 1px;
+    }
+    .accordion-header {
+      font-size: 12px;
+      &:after {
+        width: 13px;
+        height: 13px;
+        background-image: url('../img/plus22.svg');
+      }
+      &.active-header {
+        &:after {
+          background: url("../img/plus33.svg") no-repeat center;
+        }
+      }
+    }
+    .accordion-content {
+      font-size: 10px;
+      &.open-content {
+        margin-top: 11px;
+      }
+    }
+  }
+  .cost__garant {
+    margin-bottom: 20px;
+  }
+  .calc-est {
+    .tbtn--lg-o {
+
+    }
+  }
+  .calc-est__txt {
+    text-align: center;
+  }
+  .pride {
+    padding-top: 50px;
+    .h2 {
+      margin-bottom: 10px;
+    }
+    .h3 {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+  }
+  .wknow__txt {
+    margin-bottom: 20px;
+  }
+  .wknow__ul li {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    &:before {
+      display: none;
+    }
+  }
+  .canal__video {
+    margin-top: 40px;
+  }
+  .bav__ul li {
+    text-align: center;
+    padding-left: 0;
+    background: none;
+    margin-bottom: 19px;
+  }  
+  .not-only__w {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .not-only__img {
+    width: 100%;
+  }
+  .design__row {
+    text-align: center;
+  }
+  .design__idea-w {
+    margin-bottom: 20px;
+  }
+  
+  .design__txt {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .comp {
+    padding-top: 10px;
+  }
+  .comp__title {
+    font-size: 16px;
+  }
+  .wcomp__item ul li {
+    font-size: 14px;
+  }
+  .comp__w {
+    gap: 0;
+  }
+  .comp__img {
+    padding: 0;
+    height: 280px;
+    overflow: hidden;
+  }
+  .comp__form {
+    margin-top: 40px;
+  }
+  .comp__form-w input[type="email"], .comp__form-w input[type="tel"], .comp__form-w input[type="password"], .comp__form-w input[type="text"] {
+    font-size: 10px;
+    padding: 0 11px;
+    height: 34px;
+  }
+  .comp__form .tbtn--lg {
+    height: 32px;
+    padding: 0 40px;
+  }
+  .comp__label input[type="checkbox"] + span {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  .comp__label input[type="checkbox"] + span:before {
+    display: none;
+  }
+  .err-cust__w {    
+    flex-direction: column;
+    gap: 20px;
+  }
+  .err-cust__item {
+    width: 100%;
+  }
+  .err-cust {
+    padding-bottom: 40px;
+  }
+  .rd-proj__bg {
+    padding: 35px 10px 66px 10px;
+    .h2 {
+      margin-bottom: 30px;
+    }
+  }
+  .rd-proj p {
+    font-size: 12px;
+  }
+  .rd-proj .tbtn--lg {
+    padding: 0 40px;
+    color: #FFF;    
+    margin-top: 77px;
+  }
+  .our__content {
+    .h2 {
+      margin-bottom: 20px;
+    }
+  }
+}//575
 
 @media only screen and (max-width : 320px) {
   body, body > * {

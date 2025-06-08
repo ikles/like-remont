@@ -212,7 +212,7 @@ $ff2: 'Open Sans', sans-serif;
   color: rgb(0, 0, 0);
   font-size: 22.75px;
   font-weight: 300;
-  line-height: 1.3;
+  line-height: 1.3;  
   &:hover {
     color: #FFF;
   }
@@ -226,6 +226,10 @@ $ff2: 'Open Sans', sans-serif;
 
 .working__col {
   width: calc(50% - 45px);
+  > picture {
+    display: block;
+  }
+  > picture,
   > img {
     margin-bottom: 12px;
     margin-left: -29px;
@@ -675,6 +679,9 @@ $ff2: 'Open Sans', sans-serif;
 .comp__btn-w {
   text-align: center;
   margin-top: 64px;
+  button {
+    border: none;
+  }
 }
 
 .comp__form-w {
@@ -1135,9 +1142,12 @@ $ff2: 'Open Sans', sans-serif;
 
 .cost__garant {
   color: rgb(0, 0, 0);
-  font-size: 40px;
-  line-height: 1.4;
+  line-height: 1.4;  
   margin-bottom: 40px;
+  text-align: left;
+  @media (min-width : 1200px) {
+    font-size: 40px;
+  }
 }
 
 .calc-est {

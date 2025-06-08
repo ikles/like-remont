@@ -75,7 +75,11 @@
         <h2 class="h2"><strong>Как мы работаем:</strong> честно, глубоко, лично</h2>
         <div class="working__row">
           <div class="working__col">
-            <img src="img/woman.png">
+            <picture>
+              <source srcset="img/woman.png" type="image/jpeg" media="(min-width:576px)" /> <!--меньше этого будет другая-->
+              <source srcset="img/woman2.jpg" type="image/jpeg" media="(min-width:200px)" /> <!--больше этого будет эта-->
+              <img src="img/woman.png" />  
+            </picture>
             <div class="working__bl">Я не просто менеджер. Я с вами с первой планировки и до финального шурупа. Лучше разжую 5 раз чем один раз огребу. <br> Мария. Менеджер по работе с клиентами</div>
           </div>
           <div class="working__col">
@@ -359,13 +363,12 @@
         </div>
       </div>
     </section> 
-    <section class="section">
+    <section class="section cost">
       <div class="container">
         <div class="h2"><strong>Из чего складывается стоимость фахверкового дома? </strong><br>Смета без сюрпризов. Только цифры и реальность</div>
         <p class="cost__txt">Цены на строительные материалы действительно меняются. Мы не скрываем этого — наоборот, показываем, из чего складывается смета. И если вы видите предложение "дешевле" — спросите, из чего оно состоит.</p>
 
-        <div class="h2">Наша наценка минимальна — чтобы:</div>
-
+        <div class="cost__h2 h2">Наша наценка минимальна — чтобы:</div>
         <div class="cost__row">
           <div class="cost__numb-item">
             <p>Сохранить качество материалов</p>
@@ -420,7 +423,7 @@
               </div>
             </div>
           </div>
-          <div class="cost__garant">Если другой подрядчик предлагает Вам дешевле — спросите: а кто приедет, если у вас через год потечёт герметик?</div>
+          <div class="cost__garant h2">Если другой подрядчик предлагает Вам дешевле — спросите: а кто приедет, если у вас через год потечёт герметик?</div>
           <div class="calc-est">
             <div class="calc-est__txt">Получите ориентировочную смету на ваш дом. Без навязываний. С объяснением каждой цифры. Расскажем, где можно оптимизировать, а где не стоит экономить.</div>
             <a href="" class="tbtn--lg-o _dark">Рассчитать смету</a>
